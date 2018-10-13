@@ -1,0 +1,38 @@
+body {
+    font-family: 'Indie Flower', 'Roboto'; 
+    font-size: 18px;
+}
+header {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #2dc7ff;
+}
+
+.headerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#weather1 {
+    display: inline-block;
+    width: 120px;
+    margin-top: 10px;
+    vertical-align: middle;
+
+}
+
+#weather2 {
+    display: inline-block;
+    width: 120px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;  
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
