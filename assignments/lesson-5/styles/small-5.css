@@ -126,7 +126,7 @@ p {
 @media only screen and (max-width: 751px) {
     .forecast {
         display: none;
-        text-align: center;
+       /* text-align: center;
         justify-content: center;
         flex-direction: column;
         background-color: #dcb97e;
@@ -134,7 +134,7 @@ p {
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
-        padding: 15px;
+        padding: 15px; */
     }
 }
 
