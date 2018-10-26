@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/small-6.css" />
     <link rel="stylesheet" href="styles/large-6.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <script src="scripts/hamburger.js"></script>
 </head>
 <body>
     <header>
@@ -18,13 +19,11 @@
             <div class="">Weather you need it or you dont we are here for you</div>
         </div>
         <img id="weather2" src="images/weather-512.png" alt="Temperature photo">
-        <div class="">
-        <!--    <p id=""></p> -->
-        </div>
     </header>
 
     <nav>
-        <ul class="container1">
+        <button onclick="toggleHam()">&#9776</button>
+        <ul id="hamburger" class="hide" class="container1">
             <li><a href="#" onclick="">Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
@@ -38,7 +37,11 @@
     <main>
         <h1 id="townTitle">The Town of Preston</h1>
         <div class="image1">
-            <img src="images/landscape-large.jpg" alt="Hero">
+            <picture class="image1">
+                <source srcset="images/landscape-small.jpg" media="(max-width: 400px)">
+                <source srcset="images/landscape-large.jpg" media="(min-width: 400px)">
+                <img src="images/landscape-small.jpg" alt="Hero">
+            </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <div class="weatherdetails">
@@ -101,9 +104,10 @@
         </div>
         <img src="images/map-small.jpg" alt="idaho map">
         <div class="footerInfo">
-            <p>Copyright &copy; 2018 | Weather To Be</p>
-            <p>Curtis Heslop | 10/19/2018</p>
+            <p>Copyright &copy; 2018 | Weather To Be | Curtis Heslop</p>
+            <p id="date"></p>
         </div>
-    </footer>   
+    </footer> 
+    <script src="scripts/currentdate.js"></script> 
 </body>
 </html>
