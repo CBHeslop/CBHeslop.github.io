@@ -16,13 +16,12 @@
         text-align: center;
         display: inline-block;
         margin: auto;
-        padding-bottom: 15px;
+        padding-bottom: 12px;
     }
     
     .forecast th {
         border: solid 2px black;
         background-color: white;
-        padding: 4%;
     }
     
     .forecast td {
