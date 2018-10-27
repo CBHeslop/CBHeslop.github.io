@@ -86,39 +86,44 @@ p {
     border-radius: 1%;
 }
 
-.weathersummary {
-    position: absolute;
-    top: 65%;
-    left: 19%;
-    width: 15%;
-    background-color: #dcb97eAA;
-    border: solid 1px black;
-    border-radius: 15%;
-    box-shadow: 5px 5px 50px black; 
-}
+@media only screen and (max-width: 1100px) {
+    .weathersummary {
+        display: flex;
+        margin-top: 13px;
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+        background-color: #dcb97eAA;
+        border: solid 1px black;
+        border-radius: 15%;
+        box-shadow: 5px 5px 50px black; 
+    }
 
-.weathersummary > h3 {
-    margin: 5px;
-    text-align: center;
-    text-decoration: underline;
-}
+    .weathersummary > h3 {
+        display: inline;
+        margin: 5px;
+        text-align: center;
+        text-decoration: underline;
+    }
 
-.weatherdetails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .weatherdetails {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+    }
 
-.value {
-    margin: 5px;
-}
+    .value {
+        margin: 5px;
+    }
 
-.label {
-    margin: 5px;
-}
+    .label {
+        margin: 5px;
+        font-weight: bold;
+    }
 
-.weatherdetails > p {
-    font-size: 1em;
+    .weatherdetails > p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -133,6 +138,7 @@ p {
     margin-right: auto;
     background-color: #00abe7;
     width: 80%;
+    border-radius: 1%;
 }
 
 .article h2 {
@@ -155,6 +161,7 @@ p {
 footer {
     background-color: #2dc7ff;
     width: 80%;
+    border-radius: 1%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
