@@ -38,16 +38,57 @@
 
     <main>
         <h1 id="title">Storm Center</h1>
+            <p class="titlesc">Welcome to the Storm Center. We value your contrubution and information 
+            provided about the weather in and around your area. Please take a few minutes and fill out the form below
+            giving us important data about our weather.</p>
 
-        <form>
-            <!--Full Name:<br>
-            <input type="text"><br>
-            Email:<br>
-            <input type="email"><br>
-            Storm severity:<br>
-            <input type="range" name="points" min="0" max="10"><br>
-                <p>1-------5-------10</p><br>
-            <input type="submit"> -->
+        <form id="stormresponse" method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Information</legend>
+                <label class="top">First Name*<br><input type="text" name="fname" required-pattern="([A-z0-9À-ž\s]){2,}" required></label><br>
+                <br>
+                <label class="top">Last Name*<br><input type="text" name="lname" required></label><br>
+                <br>
+                <label class="top">Email<br><input type="email" name="email" placeholder="example@gmail.com"></label><br>
+                <br>
+                <label class="top">Phone Number*<br><input type="tel" name="telephone" required></label><br>
+                <br>
+                <label class="top">Zip Code*<br><input type="number" name="zipcode" required></label><br>
+                <br>
+                <label class="top">Storm Date<br><input type="date"></label><br>
+                <br>
+                <label class="top">Storm Type<br><input list="storm" name="stormtype">
+                    <datalist id="storm">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label><br>
+                <br>
+                <label>Storm Severity</label><br>
+                    <label>1<input type="range" min="1" max="10">10</label><br>
+                <br>
+                <label>Storm Region<br><select name="region">
+                    <option value selected disabled>Select Region</option>
+                    <option value>Franklin</option>
+                    <option value>Greenville</option>
+                    <option value>Springfield</option>
+                </select></label><br>
+                <br>
+                <label class="radioresponsive">User in-danger level<br>
+                    <input type="radio" name="level" value="yes">Yes
+                    <input type="radio" name="level" value="maybe">Maybe
+                    <input type="radio" name="level" value="no">No
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                Additional information or comments<br>
+                <textarea rows="4" cols="60"></textarea><br>
+                <input class="submitresponse" type="submit" value="Submit My Report">
+            </fieldset>
         </form>
     </main>
 

@@ -146,3 +146,69 @@ html {
     }
 }
 
+.titlesc {
+    width: 76.5%;
+    margin: auto;
+    margin-bottom: 25px;
+   
+}
+
+fieldset {
+    background-color: #dcb97e;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+fieldset legend {
+    font-size: 1.5em;
+}
+
+.top {
+    margin-top: 50px;
+}
+
+.top input{
+    height: 44px;
+    width: 270px; 
+    padding-left: 20px;
+}
+
+.radioresponsive > input {
+    width: 40px;
+    height: 20px;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
+}
+
+fieldset .submitresponse {
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+fieldset .submitresponse:hover {
+    font-weight: bold;
+    width: 250px;
+    height: 75px;
+    font-size: 1.3em;
+    border: 2px solid red;
+}
+
+.thankyou {
+    text-align: center;
+    margin-bottom: 25px;
+}
