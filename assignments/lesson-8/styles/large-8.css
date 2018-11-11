@@ -128,13 +128,18 @@ html {
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 20px;
+        margin-left: 10%;
+        width: 80%;
     }
 
     .gallery img {
-        width: 70%;
-        margin-left: 15%;
+        width: 90%;
         margin-bottom: 20px;
         align-content: center;
+    }
+
+    .gallery > p {
+        text-align: center;
     }
 
     .gallery img:hover {
