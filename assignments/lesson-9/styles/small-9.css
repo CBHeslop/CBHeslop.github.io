@@ -1,0 +1,244 @@
+body {
+    font-family: 'Indie Flower', 'Roboto'; 
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #2dc7ff;
+}
+
+#title {
+    text-align: center;
+}
+
+.headerText {
+    justify-content: left;
+    vertical-align: middle;
+}
+
+#weather1 {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        background-color: #178db6;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav button {
+        margin: .2rem 2%;
+        font-size: 1.6rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: .8rem 2%;
+        text-decoration: none;
+        border-top: solid 1px black;
+    }
+
+    nav ul li a:hover {
+        background-color: #777777
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #weather1 {
+        display: none;
+    }
+
+    #weather2 {
+        display: none;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;  
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.image1 > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+    border-radius: 1%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .weathersummary {
+        display: flex;
+        margin-top: 13px;
+        margin-left: 10%;
+        width: 80%;
+        justify-content: center;
+        background-color: #dcb97e;
+        border: solid 1px black;
+        border-radius: 15%;
+        box-shadow: 5px 5px 50px black; 
+    }
+
+    .weathersummary > h3 {
+        display: inline;
+        margin: 5px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .weatherdetails {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .value {
+        margin: 5px;
+    }
+
+    .label {
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    .weatherdetails > p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .forecast {
+        display: none;
+    }
+}
+
+.article {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #00abe7 !important;
+    width: 80% !important;
+    border-radius: 1% !important;
+    border: none !important;
+}
+
+.article h2 {
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+}
+
+.article p {
+    padding-bottom : 10px !important;
+    padding-left: 10px !important;
+    text-align: left !important;
+}
+
+.article img {
+    float: right !important;
+    width: 20% !important;
+    margin-right: 50px !important;
+    margin-top: 5px !important;
+}
+
+footer {
+    background-color: #2dc7ff;
+    width: 80%;
+    border-radius: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer img {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.footerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footerInfo {
+    background-color: #178db6;
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery {
+        display: none;
+    }  
+}
+
+@media only screen and (max-width: 500px) {
+    
+    section article:nth-child(1) {
+        display: none;
+    }
+
+    section article:nth-child(2) {
+        width: 250px;
+    }
+
+    section article:nth-child(3) {
+        display: none;
+    }
+
+    section article:nth-child(4) {
+        display: none;
+    }
+
+    section article:nth-child(5) {
+        width: 250px;
+    }
+
+    section article:nth-child(6) {
+        width: 250px;
+    }
+
+    section article:nth-child(7) {
+        display: none;
+    }
+
+    article {
+        margin: 25px;
+        border: 3px solid #dcb97e;
+        text-align: center;
+    }
+
+    article h2 {
+        color: #178db6;
+    }
+
+    article p {
+        color: black;
+    }
+}

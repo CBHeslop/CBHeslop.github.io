@@ -1,0 +1,55 @@
+#sales {
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 15px #628ca6;
+    width: 275px;
+    height: 320px;
+}
+
+#sales, thead, tr, th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sales > thead {
+    font-size: 25px;
+}
+
+#sales > tbody tr:first-child {
+    background-color: #628ca6;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#sales th {
+    background-color: #7fb9c2;
+}
+
+#sales tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+#sales tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+#sales > tbody tr:nth-child(6) > td:nth-child(1) {
+    font-style: italic;
+}
+
+#sales > tbody tr:nth-child(5) > td:nth-child(3) {
+    background-color: #628ca6;
+    color: #FFFFFF;
+}
+
+#sales >tfoot :last-child {
+    background-color: #7fb9c2;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sales, th, td{
+    border: 1px solid gray;
+    text-align: center;
+}

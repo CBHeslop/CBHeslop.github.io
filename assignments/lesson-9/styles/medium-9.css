@@ -1,0 +1,17 @@
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    .gallery {
+        display: none;
+    }
+    
+    .smallandlarge {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.smallandlarge img {
+    width: 70%;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    align-content: center;
+}
