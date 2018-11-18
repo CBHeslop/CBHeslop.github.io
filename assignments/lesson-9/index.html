@@ -24,78 +24,30 @@
     </header>
 
     <nav>
-        <button onclick="toggleHam()">&#9776</button>
+        <button onclick="toggleHam()">&#9776;</button>
         <ul id="hamburger" class="hide container1">
-            <li><a href="#" onclick="">Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Fish Haven</a></li>
             <li><a href="preston-9.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery-9.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
+        <div class="image1">
+            <picture class="image1">
+                <source srcset="images/landscape-small.jpg" media="(max-width: 500px)">
+                <source srcset="images/landscape-large.jpg" media="(min-width: 500px)">
+                <img src="images/landscape-small.jpg" alt="Hero">
+            </picture>
+        </div>
         
         <section>
 
         </section>
 
-        
-
-        <script>
-            var header = document.querySelector('header');
-            var section = document.querySelector('section');
-
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-            var request = new XMLHttpRequest();
-
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-
-            request.onload = function() {
-                var data = request.response;
-                information(data);
-            }
-
-            function information(data) {
-                var towns = data['towns'];
-
-                for (i = 0; i < towns.length; i++) {
-                    
-                    var myArticle = document.createElement('article');
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-                    var myPara4 = document.createElement('p');
-
-                    if(i == 1 || i == 4 || i == 5)
-                        myH2.textContent = towns[i].name;
-                    if(i == 1 || i == 4 || i == 5)
-                        myPara1.textContent = towns[i].motto;
-                    if(i == 1 || i == 4 || i == 5)
-                        myPara2.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
-                    if(i == 1 || i == 4 || i == 5)
-                        myPara3.textContent = 'Population:' + ' ' + towns[i].currentPopulation;
-                    if(i == 1 || i == 4 || i == 5)
-                        myPara4.textContent = 'Annual Rain Fall:' + ' ' + towns[i].averageRainfall;
-                    
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-                    myArticle.appendChild(myPara4);
-
-                    section.appendChild(myArticle); 
-                }
-            }
-        </script>
-
-        
     </main>
 
     <footer>
@@ -107,10 +59,11 @@
         </div>
         <img src="images/map-small.jpg" alt="idaho map">
         <div class="footerInfo">
-            <p>Copyright &copy 2018 | Weather To Be | Curtis Heslop</p>
+            <p>Copyright &copy; 2018 | Weather To Be | Curtis Heslop</p>
             <p id="date"></p>
         </div>
     </footer> 
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/jsondata.js"></script>
 </body>
 </html>

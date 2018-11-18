@@ -217,7 +217,9 @@ fieldset .submitresponse:hover {
 @media only screen and (min-width: 500px) {
     section {
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     section article:nth-child(1) {
@@ -261,4 +263,10 @@ fieldset .submitresponse:hover {
     article p {
         color: black;
     }
+
+    img {
+        width: 250px;
+    }
+
+    
 }
