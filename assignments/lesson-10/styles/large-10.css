@@ -1,3 +1,5 @@
+/* Forecast display */
+
 @media only screen and (min-width: 500px) {
     .forecast {
         display: flex;
@@ -31,10 +33,23 @@
     }
 }
 
+/* Navigation Bar with stick feature */
+
 @media only screen and (min-width: 500px) {
     nav {
         background-color: #178db6;
         margin-top: -20px;
+    }
+
+    #navbar {
+        height: 25px;
+        z-index: 1;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     nav button {
@@ -64,6 +79,8 @@
     }
 }
 
+/* Two photo icons in header */
+
 @media only screen and (min-width: 550px) {
     #weather1 {
         justify-content: center;
@@ -82,6 +99,8 @@
         vertical-align: middle;
     }
 }
+
+/* Weather summary */
 
 @media only screen and (min-width: 1100px) {
     .weathersummary {
@@ -121,6 +140,8 @@
     }
 }
 
+/* Gallery page */
+
 @media only screen and (min-width: 800px) {
     .gallery {
         display: inline-grid;
@@ -143,11 +164,9 @@
     .gallery img:hover {
         box-shadow: 5px 10px #888888;
     }
-
-    .smallandlarge {
-        display: none;
-    }
 }
+
+/* Stormcenter page */
 
 .titlesc {
     width: 76.5%;
@@ -211,10 +230,14 @@ fieldset .submitresponse:hover {
     border: 2px solid red;
 }
 
+/* Thankyou page */
+
 .thankyou {
     text-align: center;
     margin-bottom: 25px;
 }
+
+/* Home page json data */
 
 @media only screen and (min-width: 800px) {
     section {

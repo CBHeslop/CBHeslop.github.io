@@ -23,7 +23,7 @@
         <img id="weather2" src="images/weather-icon-6.png" alt="Clouds and Lighting">
     </header>
 
-    <nav>
+    <nav id="navbar">
         <button onclick="toggleHam()">&#9776;</button>
         <ul id="hamburger" class="hide container1">
             <li><a href="index.html">Home</a></li>
@@ -36,6 +36,7 @@
     </nav>
 
     <main>
+            <h1 id="title"></h1>
         <div class="image1">
             <picture class="image1">
                 <source srcset="images/landscape-small.jpg" media="(max-width: 500px)">
@@ -62,7 +63,8 @@
             <p>Copyright &copy; 2018 | Weather To Be | Curtis Heslop</p>
             <p id="date"></p>
         </div>
-    </footer> 
+    </footer>
+    <script src="scripts/navbarSticky.js"></script> 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/jsondata.js"></script>
 </body>
