@@ -62,10 +62,4 @@ weatherRequest2.onload = function() {
         document.getElementById('forecast4').innerHTML = forecast.list[i].main.temp_max;
         }
     }
-
-    /*
-    document.getElementById('forecast2').innerHTML = forecast.list[2].main.temp_max;
-    document.getElementById('forecast3').innerHTML = forecast.list[3].main.temp_max;
-    document.getElementById('forecast4').innerHTML = forecast.list[4].main.temp_max;
-    document.getElementById('forecast5').innerHTML = forecast.list[5].main.temp_max; */
 }
