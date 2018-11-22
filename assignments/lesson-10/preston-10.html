@@ -44,26 +44,28 @@
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <div class="weatherdetails">
-                    <p class="label">Currently:</p>
-                    <p class="value">Sunny</p>
-                    <p class="label">Temperature:</p>
+                    <p class="label">Current</p>
                     <p class="value">
-                        <span id="temp">76</span>
-                        &deg;F
+                        <span id="currentCondition"></span>
                     </p>
-                    <p class="label">Humidity:</p>
-                    <p class="value">69%</p>
-                    <p class="label">Precipitation:</p>
-                    <p class="value">0 inches</p>
-                    <p class="label">Wind Speed:</p>
+                    <p class="label">Temperature: </p>
                     <p class="value">
-                        <span id="windSpeed">5</span> 
+                        <span id="temp"></span>&deg;F</p>
+                    <p class="label">Humidity: </p>
+                    <p class="value">
+                        <span id="humidity"></span>
+                        %
+                    </p>
+                    <p class="label">Precipitation: </p>
+                    <p class="value">0 inches</p>
+                    <p class="label">Wind Speed: </p>
+                    <p class="value">
+                        <span id="windSpeed"></span> 
                         mph
                     </p>
-                    <p class="label">
-                        Wind Chill:
-                        <p class="label"><span id="windChill"></span>&deg;F</p>
-                    </p>
+                    <p class="label">Wind Chill: </p>
+                    <p class="value">
+                        <span id="windChill"></span>&deg;F</p>
                 </div>
             </section>
         </div>
@@ -83,11 +85,11 @@
                 <tbody>
                     <tr>
                         <th>Forecast</th>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
+                        <td><span id="forecast"></span>&deg;F</td>
+                        <td><span id="forecast1"></span>&deg;F</td>
+                        <td><span id="forecast2"></span>&deg;F</td>
+                        <td><span id="forecast3"></span>&deg;F</td>
+                        <td><span id="forecast4"></span>&deg;F</td>
                     </tr>
                 </tbody>
             </table>    
@@ -118,6 +120,7 @@
             <p id="date"></p>
         </div>
     </footer>
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/navbarSticky.js"></script> 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script> 
