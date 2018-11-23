@@ -6,7 +6,7 @@ Fish Haven 5585010*/
 
 /* Weather Summary for preston */
 let weatherRequest = new XMLHttpRequest();
-let urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=89145a110f51cea251b59acfc591ab3d&";
+let urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=89145a110f51cea251b59acfc591ab3d";
 
 weatherRequest.open('GET', urlAPI, true);
 weatherRequest.send();
@@ -24,7 +24,7 @@ weatherRequest.onload = function() {
 
 /* Weather Forecast for preston */
 let weatherRequest2 = new XMLHttpRequest();
-let urlAPI2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=89145a110f51cea251b59acfc591ab3d&";
+let urlAPI2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=89145a110f51cea251b59acfc591ab3d";
 
 weatherRequest2.open('GET', urlAPI2, true);
 weatherRequest2.send();
