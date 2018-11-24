@@ -45,9 +45,9 @@ function information(data) {
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myImg);
 
-        if(i === 1) myImg.src="images/12545922.jpg", myImg.alt="town photo";
-        if(i === 4) myImg.src="images/2014-10-04_Preston-084.jpg", myImg.alt="town photo";
-        if(i === 5) myImg.src="images/SandyMinID_3997.jpg", myImg.alt="boat photo";
+        if(i === 1) myImg.src="images/12545922.jpg", myImg.alt="Fish Haven Photo";
+        if(i === 4) myImg.src="images/2014-10-04_Preston-084.jpg", myImg.alt="Napolean Dynamite Photo";
+        if(i === 5) myImg.src="images/SandyMinID_3997.jpg", myImg.alt="Gyser Photo";
 
         section.appendChild(myArticle); 
     }
