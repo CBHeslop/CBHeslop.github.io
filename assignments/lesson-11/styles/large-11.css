@@ -77,6 +77,14 @@
         font-size: 1.1em;
         padding: .8rem 2%;
     }
+
+    nav ul li:hover {
+        background-color: #777777;
+    }
+
+    nav ul li.active {
+    background-color: #777777;
+    }
 }
 
 /* Two photo icons in header */
