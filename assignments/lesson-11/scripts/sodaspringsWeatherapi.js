@@ -24,6 +24,7 @@ weatherRequest.onload = function() {
     /* Wind Direction */
     {
         var d = weatherData.wind.deg;
+        var a;
     
         switch (parseInt((d / 45) + .5))
         {
@@ -77,31 +78,81 @@ weatherRequest2.onload = function() {
 
     for(var i = 0; i <= 8; i++) {
         if (forecast.list[i].dt_txt.includes('15:00:00')) {
-        document.getElementById('forecast').innerHTML = forecast.list[i].main.temp;
+
+            var unixtimestamp = forecast.list[i].dt;
+            var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var date = new Date(unixtimestamp*1000);
+            var year = date.getFullYear();
+            var month = months_arr[date.getMonth()];
+            var day = date.getDate();
+            var time = month + "/" + day + "/" + year;
+            document.getElementById('day1').innerHTML = time;
+
+            document.getElementById('forecast').innerHTML = forecast.list[i].main.temp;
         }
     }
 
      for(var i = 9; i <= 16; i++) {
         if (forecast.list[i].dt_txt.includes('15:00:00')) {
-        document.getElementById('forecast1').innerHTML = forecast.list[i].main.temp;
+
+            var unixtimestamp = forecast.list[i].dt;
+            var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var date = new Date(unixtimestamp*1000);
+            var year = date.getFullYear();
+            var month = months_arr[date.getMonth()];
+            var day = date.getDate();
+            var time = month + "/" + day + "/" + year;
+            document.getElementById('day2').innerHTML = time;
+
+            document.getElementById('forecast1').innerHTML = forecast.list[i].main.temp;
         }
     }
 
     for(var i = 17; i <= 24; i++) {
         if (forecast.list[i].dt_txt.includes('15:00:00')) {
-        document.getElementById('forecast2').innerHTML = forecast.list[i].main.temp;
+
+            var unixtimestamp = forecast.list[i].dt;
+            var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var date = new Date(unixtimestamp*1000);
+            var year = date.getFullYear();
+            var month = months_arr[date.getMonth()];
+            var day = date.getDate();
+            var time = month + "/" + day + "/" + year;
+            document.getElementById('day3').innerHTML = time;
+
+            document.getElementById('forecast2').innerHTML = forecast.list[i].main.temp;
         }
     }
 
     for(var i = 25; i <= 32; i++) {
         if (forecast.list[i].dt_txt.includes('15:00:00')) {
-        document.getElementById('forecast3').innerHTML = forecast.list[i].main.temp;
+
+            var unixtimestamp = forecast.list[i].dt;
+            var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var date = new Date(unixtimestamp*1000);
+            var year = date.getFullYear();
+            var month = months_arr[date.getMonth()];
+            var day = date.getDate();
+            var time = month + "/" + day + "/" + year;
+            document.getElementById('day4').innerHTML = time;
+
+            document.getElementById('forecast3').innerHTML = forecast.list[i].main.temp;
         }
     }
 
     for(var i = 33; i <= 40; i++) {
         if (forecast.list[i].dt_txt.includes('15:00:00')) {
-        document.getElementById('forecast4').innerHTML = forecast.list[i].main.temp;
+
+            var unixtimestamp = forecast.list[i].dt;
+            var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var date = new Date(unixtimestamp*1000);
+            var year = date.getFullYear();
+            var month = months_arr[date.getMonth()];
+            var day = date.getDate();
+            var time = month + "/" + day + "/" + year;
+            document.getElementById('day5').innerHTML = time;
+
+            document.getElementById('forecast4').innerHTML = forecast.list[i].main.temp;
         }
     }
 }
