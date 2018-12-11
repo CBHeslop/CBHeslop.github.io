@@ -1,0 +1,91 @@
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .navagation {
+        display: inline-flex;
+        float: right;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    ul {
+        margin-right: 15px;
+        width: 650px;
+    }
+
+    ul > li {
+        margin: 15px; 
+        margin-top: 25px;
+        margin-left: -5px;
+    }
+
+    nav ul {
+        width: 60%;
+    }
+
+    nav > li {
+        text-align: center;
+        margin: auto;
+    }
+
+    nav a {
+        font-size: 1.4em;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .callToAction p {
+        text-align: center;
+        margin: 25px;
+        font-size: 1.5em;
+    }
+
+    .callToAction button {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    }
+
+    .callToAction a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .homeImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+    
+    .homeImages img {
+        width: 90%;
+        margin-bottom: 20px;
+        align-content: center;
+    }
+
+    .homeImages > p {
+        text-align: center;
+    }
+
+    footer .icons {
+        text-align: right;
+        margin-top: -80px;
+        margin-right: 10px;
+    }
+    
+    .icons a {
+        margin: 10px;
+        color: #50514F;
+    }
+
+    .footerInfo {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+}

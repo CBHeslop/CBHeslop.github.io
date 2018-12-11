@@ -1,0 +1,216 @@
+{
+    "temples" : [
+    {
+      "name": "St. George Utah Temple",
+      "address": "250 E 400 S St George UT 84770-3699",
+      "telephone": "1-435-673-3533",
+      "email": "Log in to send email to temple",
+      "services": [
+        "Clothing rental available",
+        "Cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+      ],
+      "history" : [
+        "November 9, 1871 : Announced",
+        "November 9, 1871 : Groundbreaking",
+        "April 6, 1877 : Dedicated — dedicatory prayer",
+        "November 11, 1975 : Rededicated — dedicatory prayer"
+      ],
+      "closureSchedule" : [
+        "2018",
+        "Monday, December 24, 2018 - Tuesday, December 25, 2018",
+        "Monday, December 31, 2018",
+        "2019",
+        "Tuesday, January 1, 2019",
+        "Monday, March 11, 2019 - Saturday, March 23, 2019",
+        "Saturday, April 6, 2019",
+        "Monday, May 27, 2019",
+        "Thursday, July 4, 2019",
+        "Wednesday, July 24, 2019",
+        "Monday, September 2, 2019",
+        "Monday, September 9, 2019 - Saturday, September 21, 2019",
+        "Saturday, October 5, 2019",
+        "Wednesday, November 27, 2019 (Limited Hours)",
+        "Thursday, November 28, 2019",
+        "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+        "Tuesday, December 31, 2019 (Limited Hours)"
+      ]
+    },
+    {
+      "name": "Logan Utah Temple",
+      "address": "175 N 300 E Logan UT 84321-4720",
+      "telephone": "1-435-752-3611",
+      "email": "Log in to send email to temple",
+      "services": [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "No distribution center nearby"
+      ],
+      "history" : [
+        "October 6, 1876 : Announced",
+        "May 18, 1877 : Groundbreaking",
+        "May 17, 1884 : Dedicated — dedicatory prayer",
+        "March 13, 1979 : Rededicated — dedicatory prayer"
+      ],
+      "closureSchedule" : [
+        "2018",
+        "Tuesday, December 25, 2018",
+        "2019",
+        "Tuesday, January 1, 2019",
+        "Monday, February 11, 2019 - Monday, February 25, 2019",
+        "Saturday, April 6, 2019",
+        "Thursday, July 4, 2019",
+        "Wednesday, July 22, 2019 - Monday, August 5, 2019",
+        "Saturday, October 5, 2019",
+        "Wednesday, November 27, 2019 (Limited Hours)",
+        "Thursday, November 28, 2019",
+        "Tuesday, December 24, 2019",
+        "Tuesday, December 31, 2019 (Limited Hours)"
+      ]
+    },
+    {
+      "name": "Manti Utah Temple",
+      "address": "200 E 510 N Manti UT 84642-1701",
+      "telephone": "1-435-835-2291",
+      "email": "Log in to send email to temple",
+      "services": [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history" : [
+        "June 25, 1875 : Announced",
+        "April 25, 1877 : Groundbreaking",
+        "May 21, 1888 : Dedicated — dedicatory prayer",
+        "June 14, 1985 : Rededicated — dedicatory prayer"
+      ],
+      "closureSchedule" : [
+        "2018",
+        "Tuesday, December 25, 2018 - Wednesday, December 26, 2018",
+        "2019",
+        "Tuesday, January 1, 2019",
+        "Wednesday, January 2, 2019 - Monday, January 28, 2019",
+        "Saturday, April 6, 2019",
+        "Saturday, June 8, 2019 - Saturday, June 22, 2019 (Limited Hours)",
+        "Wednesday, July 3, 2019 (Limited Hours)",
+        "Thursday, July 4, 2019",
+        "Wednesday, July 24, 2019",
+        "Tuesday, August 6, 2019 - Monday, August 19, 2019",
+        "Saturday, October 5, 2019",
+        "Wednesday, November 27, 2019 (Limited Hours)",
+        "Thursday, November 28, 2019",
+        "Tuesday, December 24, 2019 - Thursday, December 26, 2019",
+        "Tuesday, December 31, 2019"
+      ]
+    },
+    {
+      "name": "Salt Lake Temple",
+      "address": "50 W North Temple St Salt Lake City UT 84150-9709",
+      "telephone": "1-801-240-2640",
+      "email": "Log in to send email to temple",
+      "services": [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history" : [
+        "July 28, 1847 : Announced",
+        "February 14, 1853 : Groundbreaking",
+        "April 6, 1893 : Dedicated — dedicatory prayer"
+      ],
+      "closureSchedule" : [
+        "2018",
+        "Tuesday, December 25, 2018",
+        "Saturday, December 29, 2018 (Limited Hours)",
+        "2019",
+        "Tuesday, January 1, 2019 - Monday, January 28, 2019",
+        "Saturday, April 6, 2019",
+        "Tuesday, July 2, 2019 - Monday, July 15, 2019",
+        "Wednesday, July 24, 2019",
+        "Saturday, October 5, 2019",
+        "Wednesday, November 27, 2019 (Limited Hours)",
+        "Thursday, November 28, 2019 - Friday, November 29, 2019",
+        "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+        "Tuesday, December 31, 2019"
+      ]
+    },
+    {
+      "name": "Fish Haven",
+      "motto": "This is Fish Heaven.",
+      "yearFounded": 1864,
+      "currentPopulation": 501,
+      "averageRainfall": 14.20,
+      "events" : [
+        "April 1: How Big Was That Fish Day",
+        "May 15-30: Rush the Creek Days",
+        "July 24: Bear Lake Blunder Run",
+        "December 12: Light the Tree"
+      ]
+    },
+    {
+      "name": "Greenville",
+      "motto": "Green is our way of life.",
+      "yearFounded": 1805,
+      "currentPopulation": 33458,
+      "averageRainfall": 25,
+      "events" : [
+        "February 10-12: Greenbration",
+        "May 8 - 18: Greenville Founder Days",
+        "June 20: Verde and Valiant Day",
+        "November 15-16: Greensome Gathering"
+      ]
+    },
+    {
+      "name": "Placerton",
+      "motto": "Positive Placement in Placerton.",
+      "yearFounded": 1946,
+      "currentPopulation": 512,
+      "averageRainfall": 39,
+      "events" : [
+        "July 4: A Blaze of Glory",
+        "October 20: Fall through Fall"
+      ]
+    },
+    {
+      "name": "Preston",
+      "motto": "Home of Napoleon Dynamite",
+      "yearFounded": 1866,
+      "currentPopulation": 5204,
+      "averageRainfall": 16.65,
+      "events" : [
+        "March 29: Work Creek Revival",
+        "July 8-12: Napoleon Dynamite Festival",
+        "November 2-4: Freedom Days"
+      ]
+    },
+    {
+      "name": "Soda Springs",
+      "motto": "Historic Oregon Trail Oasis. The Soda is on Us",
+      "yearFounded": 1858,
+      "currentPopulation": 2985,
+      "averageRainfall": 15.75,
+      "events" : [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    },
+    {
+      "name": "Springfield",
+      "motto": "Where everyone is lifted.",
+      "yearFounded": 1826,
+      "currentPopulation": 17852,
+      "averageRainfall": 17,
+      "events" : [
+        "January 8: Spring into Winter",
+        "April 10-20: Celebration of Life",
+        "July 31-Aug 15: Dog Days of Summer Festival"
+      ]
+    }
+   ]
+  }
+  
