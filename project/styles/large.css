@@ -12,18 +12,24 @@ p {
     font-family: 'Noto Serif', serif;
 }
 
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 main h1 {
     font-size: 3.2em;
 }
 
 .homeImage > img {
-    display: flex;
+    position: absolute;
+    z-index: -3;
     float: right;
     margin-right: 10%;
-    width: 40%;
+    width: 80%;
     border: solid 1px black;
     margin-bottom: 25px;
-    margin-left: 25px;
+    margin-left: 6%;
 }
 
 .logo {
@@ -47,6 +53,8 @@ nav ul li a:hover {
 nav ul li.active {
     background-color: #CBD4C2;
 }
+
+/* Home Page */
 
 @media only screen and (min-width: 900px) {
     .navagation {
@@ -80,6 +88,14 @@ nav ul li.active {
         display: none;
     }
 
+    .callToAction {
+        width: 25%;
+        margin-top: 12%;
+        margin-left: 15%;
+        text-align: center;
+        border-radius: 10%;
+    }
+
     .callToAction p {
         text-align: center;
         margin: 25px;
@@ -87,7 +103,7 @@ nav ul li.active {
     }
 
     .callToAction button {
-        font-size: 1.9em;
+        font-size: 2.0em;
         margin-bottom: 20px;
         border-radius: 5%;
     }
@@ -112,6 +128,10 @@ nav ul li.active {
         align-content: center;
     }
 
+    .homeContent {
+        margin-top: 38%;
+    }
+
     footer .icons {
         text-align: right;
         margin-top: -80px;
@@ -128,28 +148,23 @@ nav ul li.active {
         width: auto;
         height: auto;
         margin-top: 10px;
-        margin-left: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 10px;
     }
 }
-
-.callToAction {
-    width: 25%;
-    margin-top: 15%;
-    margin-left: 15%;
-    text-align: center;
-    border-radius: 10%;
-    box-shadow: 10px 10px 15px #CBD4C2;
-}
-
 
 .homeContent p {
     width: 80%;
     margin: auto;
 }
 
-.homeContent {
-    margin-top: 10%;
+.homeContent h2 {
+    font-size: 2.5em;
+}
+
+.homeImages {
+    margin-top: 6%;
 }
 
 .icons a:hover {
@@ -165,6 +180,8 @@ footer {
     margin-top: 55px; 
 }
 
+/* Temple Page */
+
 #templeList {
     display: flex;
     width: 100%;
@@ -176,4 +193,75 @@ footer {
 
 #templeList li {
     flex-direction: row;
+    margin: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+section h2 {
+    font-size: 2.0em;
+}
+
+ section img {
+    margin-left: 20%;
+}
+
+section img:nth-child(1) {
+    width: 60%;
+}
+
+section img:nth-child(2) {
+    width: 60%;
+}
+
+section img:nth-child(3) {
+    width: 60%;
+}
+
+section img:nth-child(4) {
+    width: 60%;
+}
+
+section article:nth-child(5) {
+    display: none;
+}
+
+section article:nth-child(6) {
+    display: none;
+}
+
+section article:nth-child(7) {
+    display: none;
+}
+
+section article:nth-child(8) {
+    display: none;
+}
+
+section article:nth-child(9) {
+    display: none;
+}
+
+ article p {
+    font-weight: bold;
+}
+
+/* Reservation Page */
+
+#reservation {
+    display: flex;
+    flex-direction: column;
+}
+
+#reservation img {
+    width: 40%;
+}
+
+#reservation form {
+    width: 50%;
 }

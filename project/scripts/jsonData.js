@@ -45,18 +45,20 @@ function information(data) {
             myPara6.textContent = 'Closure Schedule:' + ' ' + temples[i].closureSchedule;
         
         myArticle.appendChild(myH2);
+        myArticle.appendChild(myImg);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myPara5);
         myArticle.appendChild(myPara6);
-/*        myArticle.appendChild(myImg);
+        
 
-        if(i === 1) myImg.src="images/12545922.jpg", myImg.alt="Fish Haven Photo";
-        if(i === 4) myImg.src="images/2014-10-04_Preston-084.jpg", myImg.alt="Napolean Dynamite Photo";
-        if(i === 5) myImg.src="images/SandyMinID_3997.jpg", myImg.alt="Gyser Photo";
-*/
+        if(i === 0) myImg.src="images/st-george.jpg", myImg.alt="St. George Utah Temple";
+        if(i === 1) myImg.src="images/logan-temple-large.jpg", myImg.alt="Logan Utah Temple";
+        if(i === 2) myImg.src="images/manti-temple.jpg", myImg.alt="Manti Utah Temple";
+        if(i === 3) myImg.src="images/slc-temple-large.jpg", myImg.alt="Salt Lake City Utah Temple";
+        
         section.appendChild(myArticle); 
     }
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Reservations - Temple Inn and Suites</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <script src="scripts/hamburger.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul id="hamburger" class="hide navagation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class="active"><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Reservations</h1>
+        <div id=reservation>
+            <form id="reservationForm" method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label>Location<br><select name="Location">
+                        <option value selected disabled>Select Location</option>
+                        <option value>St. George</option>
+                        <option value>Logan</option>
+                        <option value>Manti</option>
+                        <option value>Salt Lake City</option>
+                    </select></label><br>
+                    <br>
+                    <label class="top">Check-in Date<br><input type="date"></label><br>
+                    <br>
+                    <label class="top">Check-out Date<br><input type="date"></label><br>
+                    <br>
+                    <label class="top">Room Type<br><input list="rooms" name="roomtype">
+                        <datalist id="rooms">
+                            <option value="One Twin"></option>
+                            <option value="One Queen"></option>
+                            <option value="One King"></option>
+                            <option value="Two Twins"></option>
+                            <option value="Two Queens"></option>
+                            <option value="Two Kings"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label><br>
+                    <br>
+                    <label class="top">First Name*<br><input type="text" name="fname" required-pattern="([A-z0-9À-ž\s]){5}" required></label><br>
+                    <br>
+                    <label class="top">Last Name*<br><input type="text" name="lname" required></label><br>
+                    <br>
+                    <label class="top">Email<br><input type="email" name="email" placeholder="example@gmail.com"></label><br>
+                    <br>
+                    <label class="top">Phone Number*<br><input type="tel" name="telephone" required></label><br>
+                    <br>
+                    <label class="top">Zip Code*<br><input type="number" name="zipcode" required></label><br>
+                    <br>
+                    <label class="top">Home state or country<br><input type="text" name="townOrCountry"></label><br>
+                    <br>
+                    Additional information or comments<br>
+                    <textarea rows="4" cols="60"></textarea><br>
+                    <input class="submitresponse" type="submit" value="Reserve Now">
+                </fieldset>
+            </form>
+            <picture class="reservationImage">
+                    <source srcset="images/reservation-image-small.jpg" media="(max-width: 500px)">
+                    <source srcset="images/reservation-image-large.jpg" media="(min-width: 500px)">
+                    <img src="images/reservation-image-small.jpg" alt="Hotel">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <div class="footerInfo">
+            <p>Curtis Heslop | Temple Inn and Suites | Copyright &copy; 2018 | <a target="_blank" href="references.html">References</a></p>
+            <p>Weather provided by <a target="_blank" href="https://openweathermap.org/">openweathermap.org</a></p>
+            <p id="date"></p>
+        </div>
+        <div class="icons">
+            <a target="_blank" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a target="_blank" href="#">
+                <i class="fab fa-yelp fa-2x"></i>
+            </a>
+            <a target="_blank" href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a target="_blank" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

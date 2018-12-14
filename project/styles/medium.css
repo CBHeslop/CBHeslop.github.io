@@ -27,13 +27,21 @@
     }
 
     nav a {
-        font-size: 1.4em;
+        font-size: 1.0em;
         text-decoration: none;
         color: black;
     }
 
     nav button {
         display: none;
+    }
+
+    .callToAction {
+        width: 25%;
+        margin-top: 12%;
+        margin-left: 15%;
+        text-align: center;
+        border-radius: 10%;
     }
 
     .callToAction p {
@@ -43,7 +51,7 @@
     }
 
     .callToAction button {
-        font-size: 1.6em;
+        font-size: 2.0em;
         margin-bottom: 20px;
         border-radius: 5%;
     }
@@ -67,6 +75,10 @@
 
     .homeImages > p {
         text-align: center;
+    }
+
+    .homeContent {
+        margin-top: 30%;
     }
 
     footer .icons {
