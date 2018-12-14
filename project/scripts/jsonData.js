@@ -58,7 +58,8 @@ function information(data) {
         if(i === 1) myImg.src="images/logan-temple-large.jpg", myImg.alt="Logan Utah Temple";
         if(i === 2) myImg.src="images/manti-temple.jpg", myImg.alt="Manti Utah Temple";
         if(i === 3) myImg.src="images/slc-temple-large.jpg", myImg.alt="Salt Lake City Utah Temple";
-        
+  /*      if(i === 2) myImg.src="images/SandyMinID_3997.jpg", myImg.alt="Gyser Photo";
+*/
         section.appendChild(myArticle); 
     }
 }
