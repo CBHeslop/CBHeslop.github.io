@@ -120,9 +120,16 @@
 }
 
 @media all and (max-width:750px) {
-    .calculator tr {    display: table;  width:100%;    }               
-    .calculator td {    display: table-row-group; }
-    .calculator th {    display: table-row-group; }             
+    .calculator tr {    
+        display: table;  
+        width:100%;    
+    }               
+    .calculator td {    
+        display: 
+        table-row-group; 
+    }
+    .calculator th {    
+        display: table-row-group;             
     }
 }
 
