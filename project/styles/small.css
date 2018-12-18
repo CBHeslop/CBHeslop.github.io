@@ -122,14 +122,17 @@
 @media all and (max-width:750px) {
     .calculator tr {    
         display: table;  
-        width:100%;    
+        width:100%;
+        text-align: center;    
     }               
     .calculator td {    
         display: 
-        table-row-group; 
+        table-row-group;
+        text-align: center; 
     }
     .calculator th {    
-        display: table-row-group;             
+        display: table-row-group;
+        text-align: center;             
     }
 }
 
@@ -141,6 +144,7 @@
 
     #addressImage {
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -156,6 +160,6 @@
     }
 
     #contactForm {
-        width: 50%;
+        width: auto;
     }
 }
