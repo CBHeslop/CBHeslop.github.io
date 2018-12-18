@@ -136,6 +136,45 @@
     }
 }
 
+/* Service Page */
+
+@media only screen and (max-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container img {
+        align-content: center;
+    }
+
+    .container1 {
+        width: 80%;
+    }
+
+    .container1 ul {
+        width: 80%;
+    }
+
+    .container1 img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container2 {
+        width: 80%;
+    }
+
+    .container2 ul {
+        width: 80%;
+    }
+
+    .container2 img {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 /* Contact Page */
 @media only screen and (max-width: 750px) {
     .address {

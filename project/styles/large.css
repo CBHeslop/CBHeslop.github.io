@@ -148,7 +148,7 @@ nav ul li.active {
     }
 
     .homeContent {
-        margin-top: 38%;
+        margin-top: 39%;
     }
 
     footer .icons {
@@ -184,6 +184,10 @@ nav ul li.active {
 
 .homeImages {
     margin-top: 6%;
+}
+
+.homeImages img {
+    width: 200px;
 }
 
 .icons a:hover {
@@ -370,6 +374,44 @@ fieldset .submitresponse:hover {
     height: 75px;
     font-size: 2.0em;
     border: 2px solid #50514F;
+}
+
+/* Services page */
+@media only screen and (min-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container1 {
+        width: 80%;
+    }
+
+    .container1 ul {
+        width: 40%;
+    }
+
+    .container1 img {
+        width: 80%;
+    }
+
+    .container2 {
+        width: 80%;
+    }
+
+    .container2 ul {
+        width: 80%;
+    }
+
+    .container2 img {
+        width: 80%;
+    }
+}
+
+.missionaries {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
 }
 
 /* Contact page */
