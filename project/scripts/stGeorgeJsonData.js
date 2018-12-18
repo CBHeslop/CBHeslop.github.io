@@ -54,7 +54,7 @@ function information(data) {
         myArticle.appendChild(myPara6);
         
 
-        if(i === 0) myImg.src="images/st-george.jpg", myImg.alt="St. George Utah Temple";
+        if(i === 0) myImg.src="images/St-George.jpg", myImg.alt="St. George Utah Temple";
        
         section.appendChild(myArticle); 
     }

@@ -48,16 +48,15 @@
                     <br>
                     <label class="top">Check-out Date<br><input type="date"></label><br>
                     <br>
-                    <label class="top">Room Type<br><input list="rooms" name="roomtype">
-                        <datalist id="rooms">
-                            <option value="One Twin"></option>
-                            <option value="One Queen"></option>
-                            <option value="One King"></option>
-                            <option value="Two Twins"></option>
-                            <option value="Two Queens"></option>
-                            <option value="Two Kings"></option>
-                        </datalist>
-                    </label><br>
+                    <label>Room Type<br><select name="roomtype">
+                        <option value selected disabled>Select Room Type</option>
+                        <option value>One Twin</option>
+                        <option value>One Queen</option>
+                        <option value>One King</option>
+                        <option value>Two Twins</option>
+                        <option value>Two Queens</option>
+                        <option value>Two Kings</option>
+                    </select></label><br>
                     <br>
                     <label class="top">First Name*<br><input type="text" name="fname" required-pattern="([A-z0-9À-ž\s]){5}" required></label><br>
                     <br>
