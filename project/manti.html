@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="Description" content="Temples, Hotel, Suites, Contact Information">
+    <meta name="Description" content="Temples, Hotel, Suites, Temple List">
     <meta name="theme-color" content="#CBD4C2"/>
-    <title>Contact - Temple Inn and Suites</title>
+    <title>Manti Temple - Temple Inn and Suites</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
@@ -23,34 +23,51 @@
             <button onclick="toggleHam()">&#9776;</button>
             <ul id="hamburger" class="hide navagation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="temples.html">Temples</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
                 <li><a href="reservation.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Contact Information</h1>
-        <p class="address">4800 Montgomery Ln #300<br>Bethesda, MD 20814</p>
-        <hr>
-        <div id="addressImage">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1545087980481" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <form id="contactForm" method="GET" action="thankyou.html">
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    <label class="top">First Name*<br><input type="text" name="fname" required-pattern="([A-z0-9À-ž\s]){5}" required></label><br>
-                    <br>
-                    <label class="top">Last Name*<br><input type="text" name="lname" required></label><br>
-                    <br>
-                    <label class="top">Email<br><input type="email" name="email" placeholder="example@gmail.com" required></label><br>
-                    <br>
-                    Your Message here<br>
-                    <textarea name="textarea" rows="4" cols="60"></textarea><br>
-                    <input class="submitresponse" type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </div>
+        <ul id="templeList">
+            <li><a href="stGeorge.html">St. George</a></li>
+            <li><a href="logan.html">Logan</a></li>
+            <li><a href="manti.html">Manti</a></li>
+            <li><a href="slc.html">Salt Lake City</a></li>
+        </ul>
+
+    <Section id="manti">
+        
+    </Section>
+
+    <section class="forecast">
+        <h3>Five Day Forecast</h3>
+        <table class="calculator">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                    <th id="day5"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Forecast</th>
+                    <td><span id="forecast"></span>&deg;F</td>
+                    <td><span id="forecast1"></span>&deg;F</td>
+                    <td><span id="forecast2"></span>&deg;F</td>
+                    <td><span id="forecast3"></span>&deg;F</td>
+                    <td><span id="forecast4"></span>&deg;F</td>
+                </tr>
+            </tbody>
+        </table>    
+    </section>
+        
     </main>
     <footer>
         <div class="footerInfo">
@@ -74,5 +91,6 @@
         </div>
     </footer>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/mantiJsonData.js"></script>
 </body>
 </html>

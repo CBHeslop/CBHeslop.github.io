@@ -44,10 +44,17 @@ nav {
     box-shadow: 5px 10px 10px #CBD4C2;
 }
 
-nav ul li a:hover {
+nav ul li a {
+    text-decoration: none;
+    color: #2B98C6;
+    font-size: 1.5em;
     transition-property: all;
-    transition-duration: 1s;
-    background-color: #CBD4C2;
+    transition-duration: 500ms;
+}
+
+nav ul li a:hover {
+    font-size: 1.9em;
+    color: #50514F;
 }
 
 nav ul li.active {
@@ -103,9 +110,21 @@ nav ul li.active {
     }
 
     .callToAction button {
-        font-size: 2.0em;
+        font-size: 1.3em;
         margin-bottom: 20px;
         border-radius: 5%;
+        width: 200px;
+        height: 50px;
+        transition-property: all;
+        transition-duration: 500ms;
+    }
+
+    .callToAction button:hover {
+        font-weight: bold;
+        width: 250px;
+        height: 75px;
+        font-size: 2.0em;
+        border: 2px solid #50514F;
     }
 
     .callToAction a {
@@ -196,6 +215,25 @@ footer {
     margin: 15px;
 }
 
+#templeList a {
+    text-decoration: none;
+    color: #2B98C6;
+    font-size: 1.7em;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+#templeList a:hover {
+    font-size: 2.2em;
+    color:  #50514F;
+}
+
+.templeImage > img{
+    width: 80%;
+    border: solid 1px black;
+    margin-left: 10%;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -213,6 +251,7 @@ section h2 {
 
 section img:nth-child(1) {
     width: 60%;
+    top: 300px;
 }
 
 section img:nth-child(2) {
@@ -225,43 +264,133 @@ section img:nth-child(3) {
 
 section img:nth-child(4) {
     width: 60%;
-}
-
-section article:nth-child(5) {
-    display: none;
-}
-
-section article:nth-child(6) {
-    display: none;
-}
-
-section article:nth-child(7) {
-    display: none;
-}
-
-section article:nth-child(8) {
-    display: none;
-}
-
-section article:nth-child(9) {
-    display: none;
+    top: 300px;
 }
 
  article p {
     font-weight: bold;
 }
 
+#stGeorge article:nth-child(2){
+    display: none;
+}
+
+#stGeorge article:nth-child(3){
+    display: none;
+}
+
+#stGeorge article:nth-child(4){
+    display: none;
+}
+
+#logan article:nth-child(1){
+    display: none;
+}
+
+#logan article:nth-child(3){
+    display: none;
+}
+
+#logan article:nth-child(4){
+    display: none;
+}
+
+#manti article:nth-child(1){
+    display: none;
+}
+
+#manti article:nth-child(2){
+    display: none;
+}
+
+#manti article:nth-child(4){
+    display: none;
+}
+
+#slc article:nth-child(1){
+    display: none;
+}
+
+#slc article:nth-child(2){
+    display: none;
+}
+
+#slc article:nth-child(3){
+    display: none;
+}
+
+.forecast {
+    flex-wrap: wrap;
+    border: solid 1px black;
+    margin-top: 20px;
+    background-color: #CBD4C2;
+}
+
+.forecast th {
+    border: solid 1px black;
+}
+
+.forecast td {
+    text-align: center;
+}
+
 /* Reservation Page */
 
-#reservation {
-    display: flex;
-    flex-direction: column;
+.reservation {
+    text-align: center;
 }
 
-#reservation img {
-    width: 40%;
+textarea {
+    width: 90%;
 }
 
-#reservation form {
-    width: 50%;
+fieldset {
+    background-color: #E2CEB1;
+    width: 80%;
+    margin: auto;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+fieldset .submitresponse {
+    font-size: 1.3em;
+    width: 200px;
+    height: 50px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+fieldset .submitresponse:hover {
+    font-weight: bold;
+    width: 250px;
+    height: 75px;
+    font-size: 2.0em;
+    border: 2px solid #50514F;
+}
+
+/* Contact page */
+@media only screen and (min-width: 750px) {
+    .address {
+        text-align: center;
+    }
+
+    #addressImage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #addressImage iframe {
+        width: 50%; 
+        height: 450px;
+        margin: auto;
+    }
+
+    #contactForm {
+        width: 50%;
+        margin-bottom: 0px;
+    }
 }

@@ -32,8 +32,8 @@
     </header>
     <main>
         <h1>Reservations</h1>
-        <div id=reservation>
-            <form id="reservationForm" method="GET" action="thanks.html">
+            <p class="reservation">Please fill out the following form to get started reserving your room today.</p>
+            <form id="reservationForm" method="GET" action="thankyou.html">
                 <fieldset>
                     <legend>Information</legend>
                     <label>Location<br><select name="Location">
@@ -56,8 +56,6 @@
                             <option value="Two Twins"></option>
                             <option value="Two Queens"></option>
                             <option value="Two Kings"></option>
-                            <option value="Thunderstorm"></option>
-                            <option value="Tornado"></option>
                         </datalist>
                     </label><br>
                     <br>
@@ -78,12 +76,6 @@
                     <input class="submitresponse" type="submit" value="Reserve Now">
                 </fieldset>
             </form>
-            <picture class="reservationImage">
-                    <source srcset="images/reservation-image-small.jpg" media="(max-width: 500px)">
-                    <source srcset="images/reservation-image-large.jpg" media="(min-width: 500px)">
-                    <img src="images/reservation-image-small.jpg" alt="Hotel">
-            </picture>
-        </div>
     </main>
     <footer>
         <div class="footerInfo">

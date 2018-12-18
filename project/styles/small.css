@@ -118,3 +118,37 @@
         margin-bottom: 10px;
     }
 }
+
+@media all and (max-width:750px) {
+    .calculator tr {    display: table;  width:100%;    }               
+    .calculator td {    display: table-row-group; }
+    .calculator th {    display: table-row-group; }             
+    }
+}
+
+/* Contact Page */
+@media only screen and (max-width: 750px) {
+    .address {
+        text-align: center;
+    }
+
+    #addressImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    #addressImage iframe {
+        width: 90%; 
+        height: 450px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #addressImage iframe {
+        justify-content: center;
+    }
+
+    #contactForm {
+        width: 50%;
+    }
+}
