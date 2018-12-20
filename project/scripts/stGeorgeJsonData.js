@@ -29,6 +29,7 @@ function information(data) {
         var myPara6 = document.createElement('p');
         var myImg = document.createElement('img');
 
+
         if(i === 0)
             myH2.textContent = temples[i].name;
         if(i === 0)
@@ -38,7 +39,7 @@ function information(data) {
         if(i === 0)
             myPara3.textContent = 'Email:' + ' ' + temples[i].email;
         if(i === 0)
-            myPara4.textContent = 'Services:' + ' ' + temples[i].services;
+            myPara4.textContent = 'Services:' + ' ' + temples[i].services;   
         if(i === 0)
             myPara5.textContent = 'History:' + ' ' + temples[i].history;
         if(i === 0)

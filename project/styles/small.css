@@ -119,19 +119,8 @@
 }
 
 @media all and (max-width:750px) {
-    .calculator tr {    
-        display: table;  
-        width:100%;
-        text-align: center;    
-    }               
-    .calculator td {    
-        display: 
-        table-row-group;
-        text-align: center; 
-    }
-    .calculator th {    
-        display: table-row-group;
-        text-align: center;             
+    .forecast {
+        display: none;
     }
 }
 
