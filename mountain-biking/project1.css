@@ -1,0 +1,105 @@
+#content {
+width: auto;
+margin: 0 auto;
+}
+
+#logo {
+position: fixed;
+}
+
+#logo1 {
+height: 100px;
+margin-top: 10px;
+margin-left: 55px;
+margin-bottom: 10px;
+}
+
+#logo2 {
+height: 100px;
+margin-left: 55px;
+}
+
+#logo3 {
+height: 100px;
+margin-left: 55px;
+}
+
+#logo4 {
+height: 100px;
+margin-left: 55px;
+}
+
+#headerText {
+font-family: monospace;
+text-align: right;
+padding-right: 90px;
+padding-top: 20px;
+font-size: 40px;
+display: inline;
+float: right;
+position: fixed;
+}
+
+nav {
+position: fixed;
+}
+
+#navbar-toggle {
+position: absolute;
+top: 10px;
+right: 20px;
+cursor: pointer;
+}
+
+ul {
+list-style-type: none;
+overflow: hidden;
+background-color: gray;
+}
+
+li {
+float: right;
+font-family: monospace;
+background-color: gray;
+padding-right: 10px;
+}
+
+li a {
+display: block;
+font-size: 25px;
+padding-left: 30px;
+margin-left: 30px;
+color: #FFFFFF;
+text-decoration: none;
+text-align: right;
+}
+
+.banner {
+width: 100%;
+}
+
+.image1 {
+width: 100%;
+}
+
+h4 {
+text-align: center;
+padding-bottom: 20px;
+margin-top: 10px;
+margin-bottom: -20px;
+}
+
+.socialmedia {
+padding: 10px;
+}
+
+.icon {
+width: 50px;
+height: 50px;
+}
+
+#copyright {
+text-align: center;
+padding-bottom: 10px;
+margin-top: -20px;
+}
