@@ -1,7 +1,7 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-var requestURL = 'https://cbheslop.github.io/temple-inn-and-suites/data/data.json';
+var requestURL = 'https://cbheslop.github.io/data/data.json';
 
 var request = new XMLHttpRequest();
 
