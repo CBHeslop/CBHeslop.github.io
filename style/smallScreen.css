@@ -1,7 +1,7 @@
 @media only screen and (max-width: 400px) {
 
     nav ul{
-        background-color: rgba(68, 68, 68, 0.8);
+        background-color: rgba(68, 68, 68, 0.6);
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -31,7 +31,7 @@
 
     nav li > a:hover {
         font-size: 30px;
-        color: #eece1a;
+        color: #7d8aff;
         transition: all;
         transition-duration: 0.4s;
         transition-timing-function: ease-out;
