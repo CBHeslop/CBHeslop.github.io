@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -167,6 +171,8 @@ nav button.rotatebtn > div:nth-child(3) {
 #container1 {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+    margin-top: -100px;
 }
 
 #container > .intro {
