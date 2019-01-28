@@ -76,7 +76,6 @@ main h1 {
 }
 
 main .icons {
-    position: fixed;
     margin-top: 30vh;
     width: 92%;
     text-align: right;
