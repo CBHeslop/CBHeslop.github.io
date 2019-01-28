@@ -59,13 +59,22 @@
         }
 
         #container1 {
-            display: row;
+            display: inline-grid;
+            grid-template-columns: 1fr;
             padding-top: 8%;
             margin-top: -8%;
         }
 
         #container1 > .intro {
             text-align: center;
+        }
+
+        #container1 > .portfolioPhoto {
+            text-align: center;
+        }
+
+        #container1 > .languages {
+            text-align: left;
         }
 
         #projects {
