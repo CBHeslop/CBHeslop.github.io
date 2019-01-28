@@ -185,6 +185,7 @@ nav button.rotatebtn > div:nth-child(3) {
 
 #container1 > .languages {
     margin-top: -5%;
+    margin-left: 10%;
     float: left;
 }
 
@@ -197,7 +198,7 @@ nav button.rotatebtn > div:nth-child(3) {
 
 .intro {
     margin-top: 40px;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     font-size: 1.3em;

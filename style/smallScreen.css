@@ -75,6 +75,7 @@
 
         #container1 > .languages {
             text-align: left;
+            margin-top: 0%;
         }
 
         #projects {
