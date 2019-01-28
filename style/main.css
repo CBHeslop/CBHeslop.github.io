@@ -178,10 +178,6 @@ nav button.rotatebtn > div:nth-child(3) {
     }
 }
 
-#container > .intro {
-    margin: auto;
-}
-
 #container1 > .portfolioPhoto {
     margin: auto;
     border: 2px solid #fff;
@@ -202,8 +198,7 @@ nav button.rotatebtn > div:nth-child(3) {
 
 .intro {
     margin-top: 40px;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     font-size: 1.3em;
@@ -229,14 +224,17 @@ nav button.rotatebtn > div:nth-child(3) {
     font-size: 4rem;
 }
 
-.projects {
-    display: flex;
-    margin: auto;
-    justify-content: space-evenly;
+@media only screen and (min-width: 600px) {
+    .projects {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
 }
 
 .projects > a > img {
     margin-top: 15%;
+    margin-left: 5%;
     border: 2px solid #fff;
     box-shadow: 5px 10px 10px rgb(66, 66, 66);
     width: 90%;
