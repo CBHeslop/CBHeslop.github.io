@@ -168,18 +168,21 @@ nav button.rotatebtn > div:nth-child(3) {
     }
 }
 
-#container1 {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 8%;
-    margin-top: -8%;
+@media only screen and (min-width: 600px) {
+
+    #container1 {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 8%;
+        margin-top: -8%;
+    }
 }
 
 #container > .intro {
     margin: auto;
 }
 
-#container1 > img {
+#container1 > .portfolioPhoto {
     margin: auto;
     border: 2px solid #fff;
     box-shadow: 5px 10px 10px rgb(66, 66, 66);
@@ -236,8 +239,5 @@ nav button.rotatebtn > div:nth-child(3) {
     margin-top: 15%;
     border: 2px solid #fff;
     box-shadow: 5px 10px 10px rgb(66, 66, 66);
-}
-
-.projects > a > img:hover {
-    width: 600px;
+    width: 90%;
 }

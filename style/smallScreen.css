@@ -46,5 +46,17 @@
         text-align: left;
         margin: auto;
     }
+
+    @media only screen and (max-width: 600px) {
+
+        #container1 {
+            padding-top: 8%;
+            margin-top: -8%;
+        }
+
+        container1 > .intro + .portfolioPhoto + .languages {
+            text-align: center;
+        }
+    }
     
 }
