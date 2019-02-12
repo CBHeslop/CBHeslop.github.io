@@ -37,55 +37,46 @@
         transition-timing-function: ease-out;
     }
 
-    #home img {
-        width: 175px;
-        margin: 40px 12% 15px;
-    }
-
     .intro {
         text-align: center;
         margin: auto;
     }
 
-    @media only screen and (max-width: 600px) {
-
-        #home > .lg-heading {
-            font-size: 5rem;
-            text-align: center;
-        }
-
-        #home > .sm-heading {
-            text-align: center;
-        }
-
-        #container1 {
-            display: inline-grid;
-            grid-template-columns: 1fr;
-            padding-top: 8%;
-            margin-top: -8%;
-        }
-
-        #container1 > .intro {
-            text-align: center;
-        }
-
-        #container1 > .portfolioPhoto {
-            text-align: center;
-        }
-
-        #container1 > .languages {
-            text-align: left;
-            margin-top: 0%;
-        }
-
-        #projects {
-            display: column;
-        }
-
-        .projects > a > img {
-            margin-left: 5%;
-            text-align: center;
-        }
+    #home > .lg-heading {
+        font-size: 5rem;
+        text-align: center;
     }
-    
+
+    #home > .sm-heading {
+        text-align: center;
+    }
+
+    #container1 {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        padding-top: 8%;
+        margin-top: -8%;
+    }
+
+    #container1 > .intro {
+        text-align: center;
+    }
+
+    #container1 > .portfolioPhoto {
+        text-align: center;
+    }
+
+    #container1 > .languages {
+        text-align: left;
+        margin-top: 0%;
+    }
+
+    #projects {
+        display: column;
+    }
+
+    .projects > a > img {
+        margin-left: 5%;
+        text-align: center;
+    }   
 }
