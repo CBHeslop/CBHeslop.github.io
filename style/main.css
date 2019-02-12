@@ -93,13 +93,13 @@ main a {
 main a:hover {
     color: #0720ff;
     transition: all;
-    transition-duration: 0.4s;
+    transition-duration: 0.7s;
     transition-timing-function: ease-out;
 }
 
 /*--- Nav Bar ---*/
 
-button {
+#transform {
     position: absolute;
     top: 35px;
     left: 35px;
@@ -219,6 +219,23 @@ nav button.rotatebtn > div:nth-child(3) {
     font-size: 1.5em;
 }
 
+#resume {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4em;
+}
+
+#resume > a {
+    padding: 15px 15px 15px 15px;
+}
+
+#resume a:hover {
+    color: #0720ff;
+    transition: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+}
+
 .block {
     margin-top: 200px;
     margin-bottom: 200px;
@@ -254,7 +271,7 @@ nav button.rotatebtn > div:nth-child(3) {
     margin-top: 15%;
     margin-left: 5%;
     border: 2px solid #fff;
-    box-shadow: 5px 10px 10px rgb(66, 66, 66);
+    box-shadow: 5px 10px 10px rgb(68, 68, 68);
     width: 90%;
 }
 
