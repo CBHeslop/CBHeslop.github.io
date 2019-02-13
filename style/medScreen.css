@@ -1,6 +1,6 @@
 /*--- Nav Bar ---*/
 
-@media only screen and (min-width: 400px) and (max-width: 800px) {
+@media screen and (min-width: 400px) and (max-width: 800px) {
 
     nav ul{
         background-color: rgba(68, 68, 68, 0.6);
