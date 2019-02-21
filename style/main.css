@@ -71,6 +71,7 @@ header {
 main {
     padding: 4rem;
     height: 100%;
+    padding-bottom: 0px;
 }
 
 main #home {
@@ -82,7 +83,7 @@ main h1 {
 }
 
 main .icons {
-    margin-top: 30vh;
+    margin-top: 33vh;
     text-align: center;
 }
 
@@ -236,9 +237,10 @@ nav button.rotatebtn > div:nth-child(3) {
     transition-timing-function: ease-out;
 }
 
-.block {
-    margin-top: 150px;
-    margin-bottom: 150px;
+#lineBreak {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
 }
 
 /*--- Projects ---*/
@@ -262,17 +264,25 @@ nav button.rotatebtn > div:nth-child(3) {
 @media only screen and (min-width: 600px) {
     .projects {
         display: flex;
+        flex-wrap: wrap;
         margin: auto;
         justify-content: center;
     }
 }
 
-.projects > a > img {
-    margin-top: 15%;
-    margin-left: 5%;
+.projects > figure > a > img {
+    margin-top: 10%;
     border: 2px solid #fff;
     box-shadow: 5px 10px 10px rgb(68, 68, 68);
-    width: 90%;
+    width: 100%;
+}
+
+.projects > figure > figcaption {
+    text-align: center;
+}
+
+.projects > figure > figcaption > a {
+    color: yellow;
 }
 
 /*--- Contact ---*/
