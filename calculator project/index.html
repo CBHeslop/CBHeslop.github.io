@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Budget Builder</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+            <script src="main.js"></script>
+        </head>
+        <body>
+            <main>
+                <h1>Budget Builder</h1>
+                <h2>This program calculates your monthly budget.</h2>
+                <h3>Please enter the following...</h3>
+
+                <section>
+                    <div id="questions">
+                        <p>Monthly Income: $<input type="text" size="7" id="monthlyIncome"></p>
+                        <p>Monthly House Payment: $<input type="text" size="7" id="housePayment"></p>
+                        <p>Monthly Utilities Expenses: $<input type="text" size="7" id="utilitiesPayment"></p>
+                        <p>Monthly Auto & Insurance Payment: $<input type="text" size="7" id="autoInsurance"></p>
+                        <p>Monthly Phone Bill: $<input type="text" size="7" id="phonePayment"></p>
+                        <p>Monthly Credit Card Expenses: $<input type="text" size="7" id="creditCardPayment"></p>
+                        <p>Monthly Food Expenses: $<input type="text" size="7" id="foodExpenses"></p>
+                        <p>Monthly Medical Expenses: $<input type="text" size="7" id="medicalExpenses"></p>
+                        <p>Other Random Expenses: $<input type="text" size="7" id="randomExpenses"></p>
+                        <button type="button" onclick="monthlyBudget()">Calculate</button>
+                    </div>
+
+                    <div>
+                        <div id="outputDiv"></div>
+                        <div id="outputDiv1"></div>
+                        <div id="outputDiv2"></div>
+                    </div>
+                </section>
+
+            </main>
+                
+            <footer>
+                <p>Budget Builder &copy; 2019</p>
+            </footer>
+        </body>
+    </html>
