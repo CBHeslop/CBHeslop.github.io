@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+    section > #questions {
+        background-color: #e9e9e991;
+        width: 90%;
+        padding: 1%;
+        margin: auto;
+        border: 2px solid #000000;
+    }
+}
