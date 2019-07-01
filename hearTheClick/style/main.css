@@ -1,0 +1,416 @@
+/** Font used, google fonts **/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Amatic+SC');
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, legend li {
+    font-family: 'Amatic SC', cursive;
+}
+
+/** Header **/
+
+header > #logo {
+    position: absolute;
+    width: 300px;
+    left: 10%;
+    transform: rotate(-25deg);
+}
+
+header > #logo > h1 {
+    margin-top: -3%;
+    margin-left: -20%;
+    text-transform: uppercase;
+    font-size: 3.7em;
+    letter-spacing: .1em;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: #F2F0B0;
+    border-bottom: 5px solid #ffffff;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+    float: right;
+    margin-right: 80px;
+    margin-top: 35px;
+}
+
+nav ul > li {
+    display: inline;
+    font-size: 1.6em;
+    margin-left: 80px;
+    transition-property: all;
+}
+
+nav li > a:link {
+    color: #0071BC;
+}
+
+nav li > a:visited {
+    color: #0071BC;
+}
+
+nav li > a:hover {
+    font-size: 1.5em;
+    color: #B3B3B3;
+    transition: all;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+nav li > a:active {
+    color: #0071BC;
+}
+
+header nav ul > li.active {
+    font-size: 1.5em;
+    color: #B3B3B3;
+    border-bottom: 2px solid #0071BC;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0071BC;
+}
+
+/** Home page **/
+
+
+@media only screen and (min-width: 1100px) {
+    article {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainPage a > img {
+    width: 100%;
+}
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    background-color: rgba(179, 179, 179, 0.75);
+    z-index: 5;
+}
+
+article > h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.4em;
+}
+
+article > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+article > .button {
+    display: flex;
+    justify-content: center;
+    margin: -10px auto 20px auto;
+    letter-spacing: 10px;
+    font-size: 1.6em;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+}
+
+article .button > a {
+    text-decoration: none;
+    color: #0071BC;
+    padding: 10px;
+}
+
+/** Gallery Page **/
+
+h2 {
+    text-align: center;
+    font-size: 2.4em;
+}
+
+#mainGallery > p {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.images a > img {
+    margin: 20px;
+    border: 2px solid #F2F0B0;
+    box-shadow: 5px 5px 5px #555555; 
+}
+
+.quotes > p {
+    text-align: center;
+    font-size: 1.4em;
+    color: #0071BC;
+}
+
+.quotes > .testimonies {
+    animation: moving 5s linear infinite;
+}
+
+@keyframes moving {
+    0% {transform: translate(0,0); }
+    10% {transform: translate(0,10%); }
+    20% {transform: translate(0,20%); }
+    25% {transform: translate(0,30%); }
+    30% {transform: translate(0,20%); }
+    40% {transform: translate(0,10%); }
+    50% {transform: translate(0,0); }
+    60% {transform: translate(0,-10%); }
+    70% {transform: translate(0,-20%); }
+    75% {transform: translate(0,-30%); }
+    80% {transform: translate(0,-20%); }
+    90% {transform: translate(0,-10%); }
+    100% {transform: translate(0,0); }
+}
+
+/** Pricing **/
+
+#pricingMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pricingMain a > img {
+    width: 100%;
+}
+
+#pricingMain > .package {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    background-color: rgba(179, 179, 179, 0.75);
+    margin: 20px 0 20px 0;
+}
+
+#pricingMain .packageTitle {
+    font-size: 2.0em;
+    color: #0071BC;
+}
+
+#pricingMain > p {
+    font-size: 1.8em;
+    color: #0071BC;
+}
+
+#pricingMain .packages {
+    font-size: 1.4em;
+    color: #0071BC;
+}
+
+#pricingMain .package div ul > li {
+    font-size: 1.4em;
+    color: #0071BC;
+}
+
+#pricingMain .package > div {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#pricingMain .package a > img {
+    width: 100%;
+    border: 2px solid #F2F0B0;
+}
+
+/** About Page **/
+
+@media only screen and (max-width: 1100px) {
+    #aboutMain {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #aboutMain .about {
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+#aboutMain {
+    display: inline-flex;
+    margin-bottom: 3%;
+}
+
+#aboutMain a > img {
+    margin: 20px;
+    border: 2px solid #F2F0B0;
+    box-shadow: 5px 5px 5px #555555;
+}
+
+#aboutMain .about {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    background-color: rgba(179, 179, 179, 0.75);
+}
+
+#aboutMain .about > p {
+    margin-left: 5%;
+    width: 90%;
+    padding: 0px;
+    font-size: 1.4em;
+    color: #000000;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/** Contact Page **/
+
+#contactMain > a {
+    position: absolute;
+    z-index: -1;
+}
+
+#contactMain a > img {
+    width: 100%;
+}
+
+#contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactMain form {
+    width: 40%;
+    float: right;
+    margin-bottom: 3%;
+}
+
+#contactMain form > .contact {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    background-color: rgba(179, 179, 179, 0.75);
+}
+
+#contactMain form .contact > legend {
+    font-size: 2.4em;
+}
+
+#contactMain form .contact > input {
+    font-size: 1.0em;
+    color: #000000;
+}
+
+#contactMain form .contact > .submitresponse {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+    letter-spacing: 10px;
+    font-size: 1.6em;
+    color: #0071BC;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+}
+
+#contactMain iframe {
+    width: 70%;
+    padding-bottom: 3%;
+    cursor: pointer;
+    height: 400px;
+}
+
+#references {
+    text-align: center;
+}
+
+/** Footer **/
+
+footer {
+    height: 80px;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    background-color: #F2F0B0;
+}
+
+footer > div {
+    display: inline;
+}
+
+footer div > p {
+    font-size: 1.0em;
+    color: #0071BC;
+    margin-left: 5%; 
+    width: 30%; 
+    padding-top: 20px;
+}
+
+footer div ul {
+    float: right;
+    text-align: right;
+    margin-right: 80px;
+    width: 60%;
+    margin-top: 30px;
+}
+
+footer div ul > li {
+    display: inline;
+    font-size: 1.2em;
+    margin-left: 5%;
+    padding: 15px;
+}
+
+footer div li > a:hover {
+    color: #B3B3B3;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #0071BC;
+}
