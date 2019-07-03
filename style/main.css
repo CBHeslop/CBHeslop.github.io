@@ -71,7 +71,7 @@ header {
 }
 
 .secondary-color {
-    color: #000000;
+    color: #00fafa;
 }
 
 /*--- Social Media Icons ---*/
@@ -100,7 +100,7 @@ main a {
 }
 
 main a:hover {
-    color: yellow;
+    color: #00fafa;
     transition: all;
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
@@ -176,7 +176,7 @@ nav button.rotatebtn > div:nth-child(3) {
 
     nav li > a:hover {
         font-size: 34px;
-        color: yellow;
+        color: #00fafa;
         transition: all;
         transition-duration: 0.4s;
         transition-timing-function: ease-out;
@@ -185,35 +185,18 @@ nav button.rotatebtn > div:nth-child(3) {
 
 /*--- About Me ---*/
 
-@media only screen and (min-width: 600px) {
-
-    #container1 {
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 8%;
-        margin-top: -8%;
-        margin-left: 10%;
-        width: 80%;
-    }
-}
-
-#container1 > .portfolioPhoto {
-    margin: auto;
-    border: 2px solid #fff;
-    box-shadow: 5px 10px 10px rgb(66, 66, 66);
+#container1 {
+    display: center;
+    padding-top: 8%;
+    margin-top: -8%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 #container1 > .languages {
-    margin-top: -5%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
-#home img {
-    float: left;
-    width: 30%;
-    margin-right: 95px;
-    
-}
 
 .intro {
     margin-top: 40px;
@@ -226,12 +209,27 @@ nav button.rotatebtn > div:nth-child(3) {
 .languages li{
     list-style-type: none;
     font-size: 1.5em;
+    color: #00fafa;
 }
 
 #resume {
+    display: center;
+    width: 80%;
+    margin-left: 10%;
     background-color: transparent;
     border: none;
     font-size: 1.4em;
+}
+
+#container1 h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#container1 h3{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 #resume > a {
@@ -239,7 +237,7 @@ nav button.rotatebtn > div:nth-child(3) {
 }
 
 #resume a:hover {
-    color: yellow;
+    color: #00fafa;
     transition: all;
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
@@ -290,7 +288,7 @@ nav button.rotatebtn > div:nth-child(3) {
 }
 
 .projects > figure > figcaption > a {
-    color: yellow;
+    color: #00fafa;
 }
 
 /*--- Contact ---*/
@@ -328,7 +326,7 @@ nav button.rotatebtn > div:nth-child(3) {
 }
 
 #contact > input > .submitresponse {
-    background-color: yellow;
+    background-color: #00fafa;
 }
 
 #contact > hr {
