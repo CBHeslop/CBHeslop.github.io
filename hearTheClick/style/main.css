@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, legend li {
 
 /** Header **/
 
+@media only screen and (min-width: 900px) {
+    
+}
+
 header > #logo {
     position: absolute;
     width: 300px;
@@ -161,8 +165,16 @@ h2 {
     margin-left: 20%;
 }
 
+@media only screen and (min-width: 900px) { 
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+} 
+
 .images {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
