@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>
+            <header>
+                <div>
+                    <h1>H.R. Payroll</h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Information</li>
+                        <li>Pay</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <form id="form">
+                    <p>Is this a New or Current employee? 
+                        <br>
+                        <input type="radio" name="type" value="0" checked="Checked"/> New
+                        <input type="radio" name="type" value="1"/> Current
+                    </p>
+
+                    <p>First Name: 
+                        <input type="text" id="firstName" placeholder="First Name" required/>
+                    </p>
+
+                    <p>Last Name:
+                        <input type="text" id="lastName" placeholder="Last Name" required/>
+                    </p>
+
+                    <p>Employee Type: 
+                        <select required name="salaryType" id="salaryType">
+                            <option value="Select One" id="selectOne">Select One</option>
+                            <option value="Hourly" id="hourly">Hourly</option>
+                            <option value="Salary" id="salary">Salary</option>
+                            <option value="Commission" id="commission">Commission</option>
+                        </select>
+                    </p>
+
+                    <button type="button" onclick="display()">Submit</button>
+                    <button type="reset" value="reset" onclick="window.location.reload()">Reset</button>
+
+                    
+                </form>
+
+                <div>
+                    <div id="outputDiv"></div>
+                </div>
+
+            </main>
+
+            <footer>
+
+            </footer>
+            
+            <script src="script/main.js"></script>
+
+        </body>
+
+    </html>
