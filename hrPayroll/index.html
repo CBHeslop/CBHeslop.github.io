@@ -4,58 +4,96 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Document</title>
+            <title>First Finance</title>
+            <link rel="stylesheet" type="text/css" href="style/small.css">
+            <link rel="stylesheet" type="text/css" href="style/large.css">
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         </head>
         <body>
             <header>
+                
                 <div>
-                    <h1>H.R. Payroll</h1>
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </div>
+                
+
+                <div class="topnav" id="myTopnav">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#news">Information</a>
+                    <a href="#contact">Pay</a>
+                    <a href="#about">Contact Us</a>
+                   
                 </div>
 
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Information</li>
-                        <li>Pay</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </nav>
             </header>
 
             <main>
-                <form id="form">
-                    <p>Is this a New or Current employee? 
-                        <br>
-                        <input type="radio" name="type" value="0" checked="Checked"/> New
-                        <input type="radio" name="type" value="1"/> Current
-                    </p>
+                <div class="imageOne imageTwo">
+               
+                    <div id="payContent">
 
-                    <p>First Name: 
-                        <input type="text" id="firstName" placeholder="First Name" required/>
-                    </p>
-
-                    <p>Last Name:
-                        <input type="text" id="lastName" placeholder="Last Name" required/>
-                    </p>
-
-                    <p>Employee Type: 
-                        <select required name="salaryType" id="salaryType">
-                            <option value="Select One" id="selectOne">Select One</option>
-                            <option value="Hourly" id="hourly">Hourly</option>
-                            <option value="Salary" id="salary">Salary</option>
-                            <option value="Commission" id="commission">Commission</option>
-                        </select>
-                    </p>
-
-                    <button type="button" onclick="display()">Submit</button>
-
-                    
-                </form>
-
-                <div>
-                    <div id="outputDiv"></div>
+                        <div id="payButton">
+                            <p>Press Me</p>
+                            <button type="button" id="additional-files">Click Me</button>
+                        </div>
+        
+                        <form class="show-onclick" id="form">
+                            <p>Is this a New or Current employee? 
+                                <br>
+                                <input type="radio" name="radioType" value="0" checked="Checked"/> New
+                                <input type="radio" name="radioType" value="1"/> Current
+                            </p>
+        
+                            <p>First Name: 
+                                <input type="text" id="firstName" placeholder="First Name" required/>
+                            </p>
+        
+                            <p>Last Name:
+                                <input type="text" id="lastName" placeholder="Last Name" required/>
+                            </p>
+        
+                            <p>Employee Type: 
+                                <select required name="salaryType" id="salaryType" onChange="hourlyCheck(this); commissionCheck(this)">
+                                    <option value="Select One" id="selectOne">Select One</option>
+                                    <option value="Hourly" id="hourly">Hourly</option>
+                                    <option value="Salary" id="salary">Salary</option>
+                                    <option value="Commission" id="commission">Commission</option>
+                                </select>
+                                <div id="hourlyDiv" style="display:none">
+                                    <label>Enter number of hours:
+                                    <input name="type" id="hourlyInput"></input>
+                                    </label>
+                                </div>
+                                <div id="commissionDiv" style="display:none">
+                                    <label>Enter total sales for week:
+                                    <input name="type" id="commissionInput"></input>
+                                    </label>
+                                </div>
+                            </p>
+        
+                            <button type="button" onclick=display()>Submit</button>
+    
+                        </form>
+        
+                        <div id="formOutput">
+                            <div id="outputDiv"></div>
+                            <div id="outputDiv2"></div>
+                            <div id="outputDiv3"></div>
+                        </div>
+                        
+                    </div>
                 </div>
 
+               
+
+                <div>
+                    <p>Test test test</p>
+                </div>
             </main>
 
             <footer>

@@ -1,0 +1,82 @@
+/* Header */
+
+@media only screen and (min-width: 800px) {
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header > .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    main > .imageOne {
+        position: relative;
+        background: url('../images/large-mainImage.jpg') no-repeat center/cover;
+        height: 600px;
+    }
+
+    #payButton {
+        width: 10%;
+        align-self: center;
+    }
+
+    #form {
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.479);
+        align-self: center;
+    }
+
+    .mainImage {
+        position: absolute;
+        z-index: -5;
+        width: 99%;
+    }
+
+    #formOutput {
+        text-align: center;
+        width: 30%;
+        background-color: rgba(167, 174, 241, 0.747);
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.479);
+        align-self: center;
+    }
+}
+
+#payButton {
+    background-color: rgba(255, 255, 255, 0.753);
+}
+
+#form {
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: 10px 0px 10px 0px;
+
+    animation: moving 1s linear;
+}
+
+@keyframes moving {
+    0% {transform: translate(-250%,0%); }
+    
+    50% {transform: translate(0,0); }
+    
+    100% {transform: translate(0,0); }
+}
+
+#formOutput > #outputDiv, #outputDiv2, #outputDiv3 {
+    margin: 10px 0px 10px 0px; 
+}
+
+#payContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2.5%;
+}

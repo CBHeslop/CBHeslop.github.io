@@ -1,0 +1,174 @@
+{
+    "utahTrails" : [
+        {
+            "name":"Wasatch Crest",
+            "location":"Alta, UT",
+            "rating":"4.8/5",
+            "difficulty":"Intermediate/Difficult",
+            "distance":"12.5 miles",
+            "elevation":[
+                "Ascent: 1,084",  
+                "Descent: -2,656",  
+                "High: 9,882",  
+                "Low: 7,616"
+            ],
+            "grade":[
+                "Avg Grade: 6% (3°)", 
+                "Max Grade: 26% (15°)"
+            ]
+        },
+        {
+            "name":"Rush",
+            "location":"Alpine, UT",
+            "rating":"4.7/5",
+            "difficulty":"Intermediate/Difficult",
+            "distance":"2.8 miles",
+            "elevation":[
+                "Ascent: 47",  
+                "Descent: -884",  
+                "High: 5,846",  
+                "Low: 5,008"
+            ],
+            "grade":[
+                "Avg Grade: 6% (4°)", 
+                "Max Grade: 26% (14°)"
+            ]
+        },
+        {
+            "name":"Wasatch Over Wasatch",
+            "location":"Park City, UT",
+            "rating":"4.2/5",
+            "difficulty":"Intermediate",
+            "distance":"9.4 miles",
+            "elevation":[
+                "Ascent: 437",  
+                "Descent: -2,343",  
+                "High: 8,368",  
+                "Low: 6,199"
+            ],
+            "grade":[
+                "Avg Grade: 6% (3°)", 
+                "Max Grade: 16% (9°)"
+            ]
+        },
+        {
+            "name":"Bobsled",
+            "location":"Salt Lake City, UT",
+            "rating":"4.4/5",
+            "difficulty":"Difficult",
+            "distance":"1.5 miles",
+            "elevation":[
+                "Ascent: 39",  
+                "Descent: -879",  
+                "High: 5,791",  
+                "Low: 4,932"
+            ],
+            "grade":[
+                "Avg Grade: 11% (6°)", 
+                "Max Grade: 24% (14°)"
+            ]
+        },
+        {
+            "name":"Levitate Downhill",
+            "location":"Alphine, UT",
+            "rating":"4.6/5",
+            "difficulty":"Difficult",
+            "distance":"1.3 miles",
+            "elevation":[
+                "Ascent: 0",  
+                "Descent: -539",  
+                "High: 6,214",  
+                "Low: 5,675"
+            ],
+            "grade":[
+                "Avg Grade: 8% (5°)", 
+                "Max Grade: 27% (15°)"
+            ]
+        },
+        {
+            "name":"Mid Mountain Trail",
+            "location":"Snyderville, UT",
+            "rating":"4.3/5",
+            "difficulty":"Intermediate",
+            "distance":"21.9 miles",
+            "elevation":[
+                "Ascent: 1,753",  
+                "Descent: -1,952",  
+                "High: 8,491",  
+                "Low: 7,859"
+            ],
+            "grade":[
+                "Avg Grade: 3% (2°)", 
+                "Max Grade: 21% (12°)"
+            ]
+        },
+        {
+            "name":"Pinecone",
+            "location":"Park City, UT",
+            "rating":"4.7/5",
+            "difficulty":"Intermediate",
+            "distance":"3.8 miles",
+            "elevation":[
+                "Ascent: 1,393",  
+                "Descent: -23",  
+                "High: 9,809",  
+                "Low: 8,416"
+            ],
+            "grade":[
+                "Avg Grade: 7% (4°)", 
+                "Max Grade: 22% (13°)"
+            ]
+        },
+        {
+            "name":"Vertigo Downhill",
+            "location":"Alphine, UT",
+            "rating":"4.5/5",
+            "difficulty":"Intermediate",
+            "distance":"1.6 miles",
+            "elevation":[
+                "Ascent: 9",  
+                "Descent: -545",  
+                "High: 6,215",  
+                "Low: 5,670"
+            ],
+            "grade":[
+                "Avg Grade: 7% (4°)", 
+                "Max Grade: 14% (8°)"
+            ]
+        },
+        {
+            "name":"Maple Hollow Downhill Trail",
+            "location":"Draper, UT",
+            "rating":"4.4/5",
+            "difficulty":"Difficult",
+            "distance":"1.9 miles",
+            "elevation":[
+                "Ascent: 0",  
+                "Descent: -1,010",  
+                "High: 6,149",  
+                "Low: 5,138"
+            ],
+            "grade":[
+                "Avg Grade: 10% (6°)", 
+                "Max Grade: 26% (15°)"
+            ]
+        },
+        {
+            "name":"Armstrong",
+            "location":"Park City, UT",
+            "rating":"4.2/5",
+            "difficulty":"Intermediate",
+            "distance":"4.0 miles",
+            "elevation":[
+                "Ascent: 1,259",  
+                "Descent: -1",  
+                "High: 8,221",  
+                "Low: 6,963"
+            ],
+            "grade":[
+                "Avg Grade: 6% (3°)", 
+                "Max Grade: 13% (8°)"
+            ]
+        }
+    ]
+}
