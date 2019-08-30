@@ -104,6 +104,10 @@ main  .sub-container3-1 {
     justify-content: flex-end;
 }
 
+.sub-container3-1 > h2 {
+    margin-right: 1.3rem;
+}
+
 /* Bike slideshow */
 
 .slideshowBikes {
@@ -165,6 +169,68 @@ main  .sub-container3-1 {
     to {opacity: 1}
 }
 
+/* Bike Trail Information*/
+.trailLinks > a:first-child {
+    position: relative;
+    background: url('../images/clouds-conifers-environment.jpg') no-repeat center/cover;
+    height: 100px;
+}
+
+.trailLinks > a:nth-child(2) {
+    position: relative;
+    background: url('../images/4x4-adventure-automobile.jpg') no-repeat center/cover;
+    height: 100px;
+}
+
+.trailLinks > a:nth-child(3) {
+    position: relative;
+    background: url('../images/adventure-bicycle-cycling-small.jpg') no-repeat center/cover;
+    height: 100px;
+}
+
+
+.tenTrails > h2 {
+   margin: 1.3rem 0rem 1.3rem 1.3rem;
+}
+
+.trailLinks {
+    margin: 1.3rem 0rem 1.3rem 0rem;
+}
+
+@media only screen and (min-width: 1150px) {
+    .trailLinks {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+    }
+
+    .trailLinks > a {
+        display: grid;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .trailLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+iframe {
+    display: none;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+#outputDiv {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
 /* Container 4 */
 
 .container4 > .gallery {
@@ -218,6 +284,7 @@ footer {
 footer > .container5 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     grid-gap: 1rem;
     width: 60%;
     margin-left: 20%;

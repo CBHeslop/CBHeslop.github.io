@@ -28,8 +28,199 @@ function showSlides(n) {
 
 
 // Trail information
-const apiUrl = 
+const apiUrl = "https://cbheslop.github.io/offThePath/data/trailData.json";
 
-async function getTrailInfo {
-  const response = await fetch()
+function trailOne() {
+
+  document.getElementById("map1").style.display="block";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 0;
+  getTrailInfo(trail);
+}
+
+function trailTwo() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="block";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 1;
+  getTrailInfo(trail);
+}
+
+function trailThree() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="block";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 2;
+  getTrailInfo(trail);
+}
+
+function trailFour() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="block";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 3;
+  getTrailInfo(trail);
+}
+
+function trailFive() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="block";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 4;
+  getTrailInfo(trail);
+}
+
+function trailSix() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="block";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 5;
+  getTrailInfo(trail);
+}
+
+function trailSeven() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="block";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 6;
+  getTrailInfo(trail);
+}
+
+function trailEight() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="block";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 7;
+  getTrailInfo(trail);
+}
+
+function trailNine() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="block";
+  document.getElementById("map10").style.display="none";
+
+  var trail = 8;
+  getTrailInfo(trail);
+}
+
+function trailTen() {
+
+  document.getElementById("map1").style.display="none";
+  document.getElementById("map2").style.display="none";
+  document.getElementById("map3").style.display="none";
+  document.getElementById("map4").style.display="none";
+  document.getElementById("map5").style.display="none";
+  document.getElementById("map6").style.display="none";
+  document.getElementById("map7").style.display="none";
+  document.getElementById("map8").style.display="none";
+  document.getElementById("map9").style.display="none";
+  document.getElementById("map10").style.display="block";
+
+  var trail = 9;
+  getTrailInfo(trail);
+}
+
+
+
+async function getTrailInfo(trail) {
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+
+  const name = data.utahTrails[trail].name;
+  const location = data.utahTrails[trail].location;
+  const rating = data.utahTrails[trail].rating;
+  const difficulty = data.utahTrails[trail].difficulty;
+  const distance = data.utahTrails[trail].distance;
+  const elevation = data.utahTrails[trail].elevation;
+  const grade = data.utahTrails[trail].grade;
+
+  const info = `Name: ${name}<br>
+                Location: ${location}<br>
+                Rating: ${rating}<br>
+                Difficulty: ${difficulty}<br>
+                Distance: ${distance}<br>
+                Elevation: (${elevation[0]} ${elevation[1]} ${elevation[2]} ${elevation[3]})<br>
+                Grade: (${grade[0]} ${grade[1]})`;
+
+  document.getElementById('outputDiv').innerHTML = info;
 }

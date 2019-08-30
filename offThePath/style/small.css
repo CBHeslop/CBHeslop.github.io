@@ -13,7 +13,12 @@
         margin: 1.5rem 0rem 1.5rem 0rem;
     }
 
+    .trailLinks > a {
+        cursor: pointer;
+    }
+
     .buttons > .prev, .buttons > .next {
+        cursor: pointer;
         width: auto;
         padding: 16px;
         color: white;
