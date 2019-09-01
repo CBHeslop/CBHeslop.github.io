@@ -13,10 +13,6 @@
         margin: 1.5rem 0rem 1.5rem 0rem;
     }
 
-    .trailLinks > a {
-        cursor: pointer;
-    }
-
     .buttons > .prev, .buttons > .next {
         cursor: pointer;
         width: auto;
@@ -30,4 +26,27 @@
         user-select: none;
     }
 
+}
+
+@media only screen and (max-width: 1150px) {
+    .trailLinks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    .trailLinks > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+
+        border: 2px solid #fff;
+        height: 6rem;
+        width: 80%;
+        border-radius: 35px;
+        margin:  .3rem auto .3rem auto;
+    }
 }
