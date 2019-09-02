@@ -26,27 +26,23 @@
         user-select: none;
     }
 
-}
-
-@media only screen and (max-width: 1150px) {
     .trailLinks {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: none;
+    }
+
+    .trailLinksSmall {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .trailLinks > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: #fff;
-        text-align: center;
-
-        border: 2px solid #fff;
-        height: 6rem;
-        width: 80%;
-        border-radius: 35px;
-        margin:  .3rem auto .3rem auto;
+    
+    .trailLinksSmall > #smallScreenTrails {
+        width: 50%;
+        margin: .3rem auto .3rem auto;
     }
-}
+
+    .trailLinksSmall > button {
+        width: 30%;
+        margin: .3rem auto .6rem auto;
+    }
+ }

@@ -26,6 +26,43 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
 }
 
+// selection option for small screens
+function display() {
+  let trailNumber = document.getElementById('smallScreenTrails').value;
+  let wasatchCrest = document.getElementById('0').value;
+  let rush = document.getElementById('1').value;
+  let wasatchOverWasatch = document.getElementById('2').value;
+  let bobsled = document.getElementById('3').value;
+  let levitateDownhill = document.getElementById('4').value;
+  let midMountainTrail = document.getElementById('5').value;
+  let pinecone = document.getElementById('6').value;
+  let vertigoDownhill = document.getElementById('7').value;
+  let mapleHollow = document.getElementById('8').value;
+
+  if (trailNumber == wasatchCrest) {
+    trailOne();
+  } else if (trailNumber == rush) {
+    trailTwo();
+  } else if (trailNumber == wasatchOverWasatch) {
+    trailThree();
+  } else if (trailNumber == bobsled) {
+    trailFour();
+  } else if (trailNumber == levitateDownhill) {
+    trailFive();
+  } else if (trailNumber == midMountainTrail) {
+    trailSix();
+  } else if (trailNumber == pinecone) {
+    trailSeven();
+  } else if (trailNumber == vertigoDownhill) {
+    trailEight();
+  } else if (trailNumber == mapleHollow) {
+    trailNine();
+  } else {
+    trailTen();
+  }
+}
+
+
 
 // Trail information
 const apiUrl = "https://cbheslop.github.io/offThePath/data/trailData.json";

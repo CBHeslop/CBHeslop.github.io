@@ -184,25 +184,31 @@ main  .sub-container3-1 {
     background-color: var(--overlay-color);
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 800px) {
     .trailLinks {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
     }
 
-    .trailLinks > a {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        color: #fff;
-        border: 2px solid #fff;
-        height: 6rem;
-        width: 80%;
-        border-radius: 35px;
-        margin:  1.3rem auto 1.3rem auto; 
+    .trailLinksSmall {
+        display: none;
     }
+}
+
+.trailLinks > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+
+    border: 2px solid #fff;
+    height: 6rem;
+    width: 80%;
+    border-radius: 35px;
+    margin:  .3rem auto .3rem auto;
 }
 
 iframe {
