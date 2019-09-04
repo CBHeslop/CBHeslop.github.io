@@ -114,6 +114,13 @@ main > .container {
     border-radius: 35px;
     font-size: 1.5rem;
     margin-bottom: 1.3rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.container .button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* Container 3 */
