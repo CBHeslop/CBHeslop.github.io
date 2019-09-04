@@ -1,6 +1,18 @@
 @media only screen and (max-width: 800px) { 
 
+    header > #smallNavbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 3.0rem;
+    }
 
+    header > #smallNavbar a {
+        text-align: center;
+    }
+
+    .navbar > .container > .nav {
+        display: none;
+    }
 
     main > .container {
         display: flex;
