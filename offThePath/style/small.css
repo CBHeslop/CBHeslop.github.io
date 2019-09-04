@@ -1,5 +1,13 @@
 @media only screen and (max-width: 800px) { 
 
+
+
+    main > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .slideshowBikes > .bikePhotos {
         margin: 0rem 1.5rem 0rem 1.5rem;
     }
@@ -39,6 +47,7 @@
     .trailLinksSmall > #smallScreenTrails {
         width: 50%;
         margin: .3rem auto .3rem auto;
+        font-size: 1.3rem;
     }
 
     .trailLinksSmall > button {

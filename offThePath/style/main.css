@@ -84,6 +84,7 @@ main > .container {
     grid-gap: 3rem;
     align-items: center;
     justify-content: center;
+    margin: 0rem auto 7.0rem auto;
 }
 
 /* Container 3 */
@@ -92,6 +93,7 @@ main > .container3 {
     position: relative;
     background: url('../images/action-adventure-bicycle.jpg') no-repeat center/cover;
     height: 1080px;
+    margin: 1.0rem auto 5.0rem auto;
 }
 
 main  .sub-container3-1 {
@@ -113,7 +115,7 @@ main  .sub-container3-1 {
 .slideshowBikes {
     max-width: 600px;
     position: relative;
-    margin: auto;
+    margin: 0rem auto 7.0rem auto;
 }
 
 .bikePhotos {
@@ -181,7 +183,7 @@ main  .sub-container3-1 {
     margin: 1.3rem 0rem 1.3rem 0rem;
     position: relative;
     padding: 2.3rem auto 2.3rem auto;
-    background-color: var(--overlay-color);
+    background-color: rgba(0, 0, 0, 0.300);
 }
 
 @media only screen and (min-width: 800px) {
@@ -194,6 +196,10 @@ main  .sub-container3-1 {
     .trailLinksSmall {
         display: none;
     }
+}
+
+.trailLinks {
+    padding: auto auto 1.3rem auto;
 }
 
 .trailLinks > a {
