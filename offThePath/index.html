@@ -12,7 +12,7 @@
             <link rel="stylesheet" href="style/small.css">
         </head>
         <body>
-            <header>
+            <header id="home">
                 <nav class="navbar">
                     <div class="container">
                         <h1 class="logo"><img src="images/logo.png" alt="logo"></h1>
@@ -25,11 +25,24 @@
                     </div>
                 </nav>
                 <div id="smallNavbar">
-                    <a> <i class="fa fa-home fa-2x"></i></a>
-                    <a><i class="fa fa-biking fa-2x"></i></a>
-                    <a><i class="fa fa-camera fa-2x"></i></a>
-                    <a><i class="fa fa-info fa-2x"></i></a>
+                    <a href="#home">
+                        <i class="fa fa-home fa-3x"></i>
+                        <p>Home</p>
+                    </a>
+                    <a href="#bikesAndTrails">
+                        <i class="fa fa-biking fa-3x"></i>
+                        <p>Biking</p>
+                    </a>
+                    <a href="#gallery">
+                        <i class="fa fa-camera fa-3x"></i>
+                        <p>Gallery</p>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa fa-info fa-3x"></i>
+                        <p>Info</p>
+                    </a>
                 </div>
+                <div class="nav-wrapper"></div>
             </header>
 
             <main>
@@ -65,7 +78,7 @@
                 </div>
 
                 <!-- Bike Gallery and information -->
-                <div class="slideshowBikes">
+                <div id="bikesAndTrails" class="slideshowBikes">
                     <h2>Bikes & Trails</h2>
                     <div class="bikePhotos fade">
                         <img src="images/cannondale-dirt-jump-bike.jpg" alt="">
@@ -167,7 +180,7 @@
                 </div>
 
                 <!-- Gallery -->
-                <div class="container4">
+                <div id="gallery" class="container4">
                     <h2>Gallery</h2>
                     <div class="gallery">
                         <a href="images/adventure-sunset.jpg" class="big">
@@ -193,7 +206,7 @@
             </main>
 
             <!-- Footer -->
-            <footer>
+            <footer id="contact">
                 <div class="container5">
                     <div class="sub-container5-1">
                         <h3>Test</h3>
@@ -209,10 +222,14 @@
                         </ul>
                     </div>
                     <div class="sub-container5-3">
-                        <h4>Test</h4>
+                        <h4>Social Media</h4>
                         <a href="http://twitter.com">
-                            <i class="fa fa-twitter fa-2x"></i>
+                            <i class="fa fa-twitter fa-2x"></i>                          
+                        </a>
+                        <a href="http://facebook.com">                           
                             <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="http://instagram.com">
                             <i class="fa fa-instagram fa-2x"></i>
                         </a>
                     </div>

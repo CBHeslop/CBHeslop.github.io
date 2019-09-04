@@ -1,12 +1,27 @@
 @media only screen and (max-width: 800px) { 
 
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    header > .nav-wrapper {
+        padding: 60px;
+    }
+
     header > #smallNavbar {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-bottom: 3.0rem;
+        padding-top: 1.3rem;
+        background-color: #fff;
+        z-index: 10;
     }
 
-    header > #smallNavbar a {
+    header > #smallNavbar > a {
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
