@@ -40,10 +40,8 @@ img {
 
 /* Nav Bar */
 
-@media  only screen and (min-width: 800px) {
-    header > #smallNavbar {
-        display: none;
-    }
+.topnav a {
+    padding: 1.3rem;
 }
 
 .container {
@@ -71,15 +69,13 @@ img {
     margin-left: 5%;
 }
 
-.container > .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav li {
-    margin-right: 1.5rem;
+@media only screen and (min-width: 800px) {
+    .container > .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 /* Main */
@@ -96,7 +92,6 @@ main > .container {
 
 .container h2 {
     margin-bottom: 1.3rem;
-    font-size: 36px;
 }
 
 .container h4 {
@@ -156,7 +151,6 @@ main  .sub-container3-1 {
 }
 
 .slideshowBikes > h2 {
-    font-size: 3.0rem;
     text-align: center;
     margin-bottom: .5rem;
 }
@@ -289,7 +283,6 @@ iframe {
 /* Container 4 */
 
 .container4 > h2 {
-    font-size: 3.0rem;
     text-align: center;
     margin-bottom: 3.0rem;
 }
