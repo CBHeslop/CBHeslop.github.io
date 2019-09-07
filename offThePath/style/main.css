@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-ul {
+l {
     list-style: none;
 }
 
@@ -130,8 +130,8 @@ main > .container3 {
 
 main  .sub-container3-1 {
     height: 100%;
-    width: 80%;
-    margin-left: 10%;
+    width: 50%;
+    margin-left: 25%;
     color: #fff;
     display: flex;
     align-items: center;
@@ -179,11 +179,11 @@ main  .sub-container3-1 {
 
 
     .prev {
-        margin-left: -60px;
+        margin-left: -120px;
     }
 
     .next {
-        right: 0;
+        right: -40px;
     }
 }
 
@@ -206,6 +206,15 @@ main  .sub-container3-1 {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+.description {
+    margin: 0px auto 1.3rem auto;
+    font-size: 1.6rem;
+}
+
+.productInfo > p {
+    margin-top: 3.3rem;
 }
 
 /* Bike Trail Information*/
