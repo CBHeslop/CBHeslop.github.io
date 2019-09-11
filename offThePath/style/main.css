@@ -221,7 +221,7 @@ main  .sub-container3-1 {
 .tenTrails h2 {
    margin: 1.3rem 0rem 1.3rem 1.3rem;
    text-align: center;
-   color: #fff;
+   color: rgb(32, 32, 32);
    padding-top: 1.3rem;
 }
 
@@ -229,7 +229,7 @@ main  .sub-container3-1 {
     margin: 1.3rem 0rem 1.3rem 0rem;
     position: relative;
     padding: 2.3rem auto 2.3rem auto;
-    background-color: var(--overlay-color);
+    background-color: #e4e4e4;
 }
 
 @media only screen and (min-width: 800px) {
@@ -253,9 +253,9 @@ main  .sub-container3-1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #fff;
+    color: rgb(32, 32, 32);
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid rgb(32, 32, 32);
     height: 6rem;
     width: 80%;
     border-radius: 35px;
