@@ -285,6 +285,7 @@ nav button.rotatebtn > div:nth-child(3) {
 
 .projects > figure > figcaption {
     text-align: center;
+    margin-top: 1.3rem;
 }
 
 .projects > figure > figcaption > a {
