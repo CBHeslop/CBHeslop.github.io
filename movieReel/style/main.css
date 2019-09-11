@@ -151,9 +151,13 @@ header > .logo > img {
     transform: scale(1.05);
 }
 
-.movieElement h3 {
+.movieElement h3, .movieElement h6 {
     text-align: center;
     font-family: var(--primary-font);
+}
+
+.movieElement h6 {
+    margin-top: -.5rem;
 }
 
 /* Footer */

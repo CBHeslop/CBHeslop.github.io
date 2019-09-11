@@ -18,7 +18,8 @@ async function getMovie(movieTitle) {
         <div class="element">
             <div class="movieElement">
                 <a onclick="eachMovie(${numberOfMovies[i].imdbID})"><img src="${numberOfMovies[i].Poster}"> </a>
-                <h3>${numberOfMovies[i].Title}</h3>  
+                <h3>${numberOfMovies[i].Title}</h3>
+                <h6>${numberOfMovies[i].Year}</h6> 
             </div>
         </div>
         `;
