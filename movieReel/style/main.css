@@ -7,12 +7,12 @@
     --underlay-color: #eeeeee;
     --primary-font: 'Special Elite', cursive;
     --secondary-font: 'News Cycle', sans-serif;
+    --third-font: 'Roboto', sans-serif;
 }
 
 html, 
 body,
 main {
-    height: 100%;
     margin: 0;
 }
 
@@ -37,10 +37,11 @@ main > header {
     grid-template-columns: repeat(2, 1fr);
 }
 
-main > header > .logo {
-    background-color: var(--underlay-color);
+@media screen and (min-width: 850px) {
+    main > header > .logo {
+        background-color: var(--underlay-color);
+    }
 }
-
 header > .logo > img {
     margin-top: 3.3rem;
     margin-right: 4.3rem;
@@ -125,6 +126,7 @@ header > .logo > img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
+    background-color: var(--underlay-color);
 }
 
 .element {
@@ -160,6 +162,68 @@ header > .logo > img {
     margin-top: -.5rem;
 }
 
+/* Movie LightBox Information page */
+
+#containerLightBox {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    z-index:100;
+    opacity:0.8;
+}
+
+#lightBox {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    padding: 0;
+    margin:0;
+    border: 5px solid white;
+    background-color: rgb(49, 49, 49);
+    z-index:101;
+    overflow: auto;
+}
+
+.movieContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 90%;
+}
+
+.movieContainer img {
+    width: 80%;
+    align-self: center;
+    padding: 2.0rem;
+    transform: scale(.75);
+}
+
+.movieContainer h4 {
+    color: white;
+    font-family: var(--third-font);
+    font-weight: bold;
+}
+
+.movieContainer .data > span {
+    color: white;
+    font-weight: 0;
+}
+
+#movieInformation {
+    width: 80%;
+    align-self: center;
+    padding: 2.0rem;
+}
+
+
 /* Footer */
 
 main > footer {
@@ -180,6 +244,8 @@ footer > .foot a {
     font-size: 15px;
 }
 
-main > footer div:nth-child(2) {
-    background-color: var(--underlay-color);
+@media screen and (min-width: 850px) {
+    main > footer div:nth-child(2) {
+        background-color: var(--underlay-color);
+    }
 }

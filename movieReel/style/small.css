@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 850px) {
+    /* Main and Header */
+
+    .containers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > header > .logo {
+        background-color: none;
+    }
+
+    header > .logo > img {
+        margin-top: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    /* Left Container */
+
+    .containers > .container-left {
+        margin: 0 10% 10% 10%;
+    }
+
+    /* Right Container */
+
+    .container-right > img {
+        margin-top: 3.0rem;
+    }
+}
+
+/* Movie Selection Screen size */
+
+@media screen and (max-width: 400px) {
+    #containerInfo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    #containerInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #containerInfo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    #containerInfo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* Movie lightBox */
+
+    #lightBox {
+        left: 10%;
+        width: 80%;   
+    }
+
+    .movieContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .movieContainer img {
+        width: 90%;
+        align-self: center;
+        transform: scale(.75);
+        margin-bottom: -20%;
+    }
+}
