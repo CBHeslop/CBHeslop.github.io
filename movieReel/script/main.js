@@ -7,7 +7,7 @@ function movies() {
 
 async function getMovie(movieTitle) {
 
-    const response = await fetch('http://www.omdbapi.com?s='+movieTitle+'&apikey=7f2c99ee');
+    const response = await fetch('https://www.omdbapi.com?s='+movieTitle+'&apikey=7f2c99ee');
     const data = await response.json();
 
     let numberOfMovies = data.Search;
@@ -18,7 +18,7 @@ async function getMovie(movieTitle) {
         outputDiv += `
         <div class="element">
             <div class="movieElement">
-                <a href="#containerInfo"onclick="eachMovie('${numberOfMovies[i].imdbID}')"><img src="${numberOfMovies[i].Poster}"> </a>
+                <a onclick="eachMovie('${numberOfMovies[i].imdbID}')"><img src="${numberOfMovies[i].Poster}"> </a>
                 <h3>${numberOfMovies[i].Title}</h3>
                 <h6>${numberOfMovies[i].Year}</h6> 
             </div>
@@ -34,7 +34,7 @@ async function getMovie(movieTitle) {
 
 async function eachMovie(imdbID) {
 
-    const response = await fetch('http://www.omdbapi.com?i='+imdbID+'&apikey=7f2c99ee');
+    const response = await fetch('https://www.omdbapi.com?i='+imdbID+'&apikey=7f2c99ee');
     const data = await response.json();
 
     console.log(data);
