@@ -10,10 +10,13 @@
     --third-font: 'Roboto', sans-serif;
 }
 
-html, 
-body,
-main {
-    margin: 0;
+@media screen and (min-width: 850px) {
+    html, 
+    body,
+    main {
+        height: 100%;
+        margin: 0;
+    }
 }
 
 body {
@@ -107,6 +110,7 @@ header > .logo > img {
 .containers > .container-right {
     align-items: center;
     background-color: var(--underlay-color);
+    margin-bottom: -2.3rem;
 }
 
 .container-right > img {
@@ -127,6 +131,7 @@ header > .logo > img {
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
     background-color: var(--underlay-color);
+    margin-top: 1.3rem;
 }
 
 .element {
@@ -189,6 +194,10 @@ header > .logo > img {
     background-color: rgb(49, 49, 49);
     z-index:101;
     overflow: auto;
+}
+
+#lightBox a {
+    color: white;
 }
 
 .movieContainer {

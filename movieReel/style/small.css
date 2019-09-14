@@ -2,6 +2,12 @@
 @media screen and (max-width: 850px) {
     /* Main and Header */
 
+    html, 
+    body,
+    main {
+        margin: 0;
+    }
+
     .containers {
         display: flex;
         flex-direction: column;
@@ -35,11 +41,19 @@
     #containerInfo {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .container-left > .search { 
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
     #containerInfo {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-left > .search { 
+        width: 90%;
     }
 }
 
@@ -47,10 +61,15 @@
     #containerInfo {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .container-left > .search { 
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1300px) {
     #containerInfo {
+        margin-top: 2.3rem;
         grid-template-columns: repeat(4, 1fr);
     }
 }
