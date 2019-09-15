@@ -49,7 +49,7 @@ async function eachMovie(id) {
     let outputDiv2 = '';
 
     outputDiv2 = `<div id="lightBox">
-                    <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">close here</a>
+                    <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
                     <div class="movieContainer">
                         <img src="https://image.tmdb.org/t/p/w300/${info.poster_path}">
                         <div id="movieInformation">

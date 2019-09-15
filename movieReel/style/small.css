@@ -29,6 +29,10 @@
     }
 
     /* Right Container */
+    
+    .container-right {
+        display: none;
+    }
 
     .container-right > img {
         margin-top: 3.0rem;
