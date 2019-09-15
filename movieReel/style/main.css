@@ -198,9 +198,8 @@ header > .logo > img {
 }
 
 #lightBox a {
-    width: 100%;
-    color: white;
-    font-size: 2.3rem;
+    color: rgb(194, 194, 194);
+    cursor: pointer;
 }
 
 .movieContainer {
@@ -239,7 +238,7 @@ header > .logo > img {
 /* Footer */
 
 footer > .foot {
-    margin: 1.3rem 1.3rem 1.3rem 1.3rem;
+    margin: auto;
     text-align: center;
 }
 
@@ -259,6 +258,7 @@ footer > .movieApiLogo img {
 footer > .movieApiLogo p {
     font-size: .8rem;
     text-align: center;
+    padding: .8rem;
 }
 
 @media screen and (min-width: 850px) {
