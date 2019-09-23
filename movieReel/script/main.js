@@ -33,6 +33,8 @@ async function getMovie(movieTitle) {
 
     document.getElementById('containerInfo').innerHTML = outputDiv;
 
+    location.href="#containerInfo";
+
 }
 
 
