@@ -4,7 +4,7 @@
             "name":"Samsung",
             "price":"$209.95",
             "model":"SM-R800NZSAXAR",
-            "img": "https://cbheslop.github.io/watch-website/images/amazon-watch.jpg",
+            "img": "../watch-website/images/amazon-watch.jpg",
             "size":"46mm",
             "color":"silver",
             "misc":[
@@ -28,6 +28,7 @@
             "name":"Samsung",
             "price":"$209.95",
             "model":"SM-R800NZSAXAR",
+            "img": "../watch-website/images/amazon-watch.jpg",
             "size":"46mm",
             "color":"silver",
             "misc":[
@@ -39,6 +40,7 @@
             "name":"Samsung",
             "price":"$209.95",
             "model":"SM-R800NZSAXAR",
+            "img": "../watch-website/images/orange hands.jpg",
             "size":"46mm",
             "color":"silver",
             "misc":[
