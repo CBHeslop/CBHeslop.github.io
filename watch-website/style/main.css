@@ -94,12 +94,12 @@ main  .mainQuote {
     justify-content: center;
 }
 
-.mainQuote > h2, h3, a {
+.mainQuote > h2, h3, button {
     justify-content: flex-end;
     margin: 1.3rem 0 1.3rem 0;
 }
 
-.mainQuote > a {
+.mainQuote > button {
     width: 15%;
     background-color: var(--secondary-color);
     padding: 1rem .5rem 1rem .5rem;
@@ -113,6 +113,17 @@ main  .mainQuote {
 .containerOneA {
     height: 4.0rem;
     background-color: var(--nav-color);
+}
+
+/* Watch selection */
+
+#containerInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    background-color: var(--underlay-color);
+    margin-top: 1.3rem;
+    margin-left: 5%;
 }
 
 
