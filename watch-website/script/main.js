@@ -25,7 +25,7 @@ async function watches() {
         outputDiv += `
         <div class="element">
             <div class="watchElement">
-                <a onclick="eachWatch()"><img src=""> </a>
+                <a onclick="eachWatch()"><img src="${data.watches[i].img}"> </a>
                 <h3>${data.watches[i].name}</h3>
                 <h3>${data.watches[i].price}</h3>
             </div>
