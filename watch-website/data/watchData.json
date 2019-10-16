@@ -1,0 +1,48 @@
+{
+    "watches" : [
+        {
+            "name":"Samsung",
+            "price":"$209.95",
+            "model":"SM-R800NZSAXAR",
+            "size":"46mm",
+            "color":"silver",
+            "misc":[
+                "Bluetooth",  
+                "Digital Display"  
+            ]
+        },
+        {
+            "name":"Samsung",
+            "price":"$209.95",
+            "model":"SM-R800NZSAXAR",
+            "size":"46mm",
+            "color":"silver",
+            "misc":[
+                "Bluetooth",  
+                "Digital Display"  
+            ]
+        },
+        {
+            "name":"Samsung",
+            "price":"$209.95",
+            "model":"SM-R800NZSAXAR",
+            "size":"46mm",
+            "color":"silver",
+            "misc":[
+                "Bluetooth",  
+                "Digital Display"  
+            ]
+        },
+        {
+            "name":"Samsung",
+            "price":"$209.95",
+            "model":"SM-R800NZSAXAR",
+            "size":"46mm",
+            "color":"silver",
+            "misc":[
+                "Bluetooth",  
+                "Digital Display"  
+            ]
+        }   
+    ]
+}

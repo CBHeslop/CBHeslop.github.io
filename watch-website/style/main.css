@@ -1,0 +1,120 @@
+/* Body */
+
+:root {
+    --nav-color: #B09E99;
+    --primary-color: #FDF3ED;
+    --secondary-color:#FEE9E1;
+    --overlay-color: rgba(0, 0, 0, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+#home {
+    background-color: var(--nav-color);
+}
+
+header img {
+    width: 100px;
+}
+
+
+/* Nav Bar */
+
+.topnav a {
+    padding: 1.3rem;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem; 
+}
+
+.navbar {
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container > .logo {
+    display: flex;
+    align-content: center;
+    margin-left: 5%;
+}
+
+.container h1 {
+    align-self: flex-end;
+}
+
+@media only screen and (min-width: 800px) {
+    .container > .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+/* Main Body */
+
+.containerOne {
+    position: relative;
+    background: url('../images/analog-watch-blur-classic-.jpg') no-repeat center/cover;
+    height: 1080px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
+main  .mainQuote {
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainQuote > h2, h3, a {
+    justify-content: flex-end;
+    margin: 1.3rem 0 1.3rem 0;
+}
+
+.mainQuote > a {
+    width: 15%;
+    background-color: var(--secondary-color);
+    padding: 1rem .5rem 1rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.containerOneA {
+    height: 4.0rem;
+    background-color: var(--nav-color);
+}
+
+
+
+/* Footer */
