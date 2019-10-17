@@ -46,12 +46,16 @@ async function eachWatch(id) {
     outputDivTwo = `
     <div id="lightBox">
         <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
-        <div class="movieContainer">
-            <img src="">
+        <div class="watchContainer">
+            <img src="${data.watches[id].img}">
             <div id="watchInformation">
-                <h4>Title: <span class="data">${data.name}</span></h4>
-                <h4>Price: ${data.price}</h4>
-                <h4>Model: ${data.model}</h4>
+                <h2><span class="data">${data.watches[id].name}</span></h2>
+                <h4><span class="size">${data.watches[id].model}</span></h4>
+                <h3>Price: ${data.watches[id].price}</h3>
+                <h3>Size: ${data.watches[id].size}</h3>
+                <h3>Color: ${data.watches[id].color}</h3>
+                <h3>${data.watches[id].misc}</h3>
+                <a target="_blank" href="${data.watches[id].url}">Shop Now</a>
                 
             </div>
         </div>
