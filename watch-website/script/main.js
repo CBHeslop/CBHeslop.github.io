@@ -9,6 +9,9 @@ function myFunction(x) {
     }    
 }
 
+
+
+
 // watch api
 
 let apiUrl = "https://cbheslop.github.io/watch-website/data/watchData.json";
@@ -26,7 +29,7 @@ async function watches() {
         <div class="element">
             <div class="watchElement">
                 <a onclick="eachWatch(${data.watches[i].id})"><img src="${data.watches[i].img}"> </a>
-                <h3>${data.watches[i].name}</h3>
+                <h2>${data.watches[i].name}</h2>
                 <h3>${data.watches[i].price}</h3>
             </div>
         </div>
@@ -34,6 +37,14 @@ async function watches() {
     }
 
     document.getElementById('containerInfo').innerHTML = outputDiv;
+
+    smoothScroll();
+}
+
+function smoothScroll() {
+    document.querySelector('#containerInfo').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
 }
 
 async function eachWatch(id) {

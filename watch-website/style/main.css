@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 /* Header */
 
 #home {
@@ -45,6 +49,7 @@ header img {
 .navbar > .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
 }
 
 .container > .logo {
@@ -54,7 +59,7 @@ header img {
 }
 
 .container h1 {
-    align-self: flex-end;
+    align-self: center;
 }
 
 @media only screen and (min-width: 800px) {
@@ -124,10 +129,19 @@ main  .mainQuote {
     background-color: var(--underlay-color);
     margin-top: 1.3rem;
     margin-left: 5%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 .watchElement img {
     width: 200px;
+}
+
+.firstMainImage {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
 }
 
 /* Watch lightbox and information */
@@ -203,5 +217,28 @@ main  .mainQuote {
     border-radius: 15px;
 }
 
+article > p {
+    text-align: center;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
 
 /* Footer */
+
+footer {
+    background-color: var(--nav-color);
+}
+
+footer .footerContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin-left: 10%;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 1.3rem;
+    margin-top: 2%;
+}
