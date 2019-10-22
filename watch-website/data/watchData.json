@@ -1,57 +1,114 @@
 {
-    "watches" : [
-        {
-            "id": "0",
-            "name":"Samsung",
-            "price":"$209.95",
-            "model":"SM-R800NZSAXAR",
-            "img": "../watch-website/images/amazon-watch.jpg",
-            "url": "https://www.amazon.com/",
-            "size":"46mm",
-            "color":"silver",
-            "misc":[
-                "Bluetooth",  
-                "Digital Display"  
-            ]
-        },
-        {
-            "id": "1",
-            "name":"Samsung",
-            "price":"$209.95",
-            "model":"SM-R800NZSAXAR",
-            "img": "../watch-website/images/orange hands.jpg",
-            "size":"46mm",
-            "color":"silver",
-            "misc":[
-                "Bluetooth",  
-                "Digital Display"  
-            ]
-        },
-        {
-            "id": "2",
-            "name":"Samsung",
-            "price":"$209.95",
-            "model":"SM-R800NZSAXAR",
-            "img": "../watch-website/images/amazon-watch.jpg",
-            "size":"46mm",
-            "color":"silver",
-            "misc":[
-                "Bluetooth",  
-                "Digital Display"  
-            ]
-        },
-        {
-            "id": "3",
-            "name":"Samsung",
-            "price":"$209.95",
-            "model":"SM-R800NZSAXAR",
-            "img": "../watch-website/images/orange hands.jpg",
-            "size":"46mm",
-            "color":"silver",
-            "misc":[
-                "Bluetooth",  
-                "Digital Display"  
-            ]
-        }   
-    ]
+    "watches" : {
+        "dressWatches" : [
+            {
+                "id": "0",
+                "name":"Dress Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://www.amazon.com/",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "1",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/orange hands.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "2",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/amazon-watch.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "3",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/orange hands.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            }
+        ],   
+        "fieldWatches" : [
+            {
+                "id": "0",
+                "name":"Field Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://www.amazon.com/",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "1",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/orange hands.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "2",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/amazon-watch.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            },
+            {
+                "id": "3",
+                "name":"Samsung",
+                "price":"$209.95",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/orange hands.jpg",
+                "size":"46mm",
+                "color":"silver",
+                "misc":[
+                    "Bluetooth",  
+                    "Digital Display"  
+                ]
+            }
+        ]   
+    }
 }

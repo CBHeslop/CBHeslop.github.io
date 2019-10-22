@@ -42,8 +42,6 @@ header img {
 
 .navbar {
     font-size: 1.3rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
 }
 
 .navbar > .container {
@@ -89,7 +87,7 @@ header img {
     background-color: var(--overlay-color);
 }
 
-main  .mainQuote {
+main  .mainQuote, .mainMenuWatch {
     height: 100%;
     width: 70%;
     margin-left: 15%;
@@ -99,12 +97,12 @@ main  .mainQuote {
     justify-content: center;
 }
 
-.mainQuote > h2, h3, button {
+.mainQuote, .mainMenuWatch > h2, h3 {
     justify-content: flex-end;
     margin: 1.3rem 0 1.3rem 0;
 }
 
-.mainQuote > button {
+.mainQuote > a {
     width: 15%;
     background-color: var(--secondary-color);
     padding: 1rem .5rem 1rem .5rem;
@@ -118,6 +116,35 @@ main  .mainQuote {
 .containerOneA {
     height: 4.0rem;
     background-color: var(--nav-color);
+}
+
+/* Watch page */
+
+.firstMainImage {
+    position: relative;
+    background: url('../images/black-watch.jpg') no-repeat center/cover;
+    height: 400px;
+}
+
+main .mainMenuWatch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main .watchCategorie {
+    place-self: center;
+}
+
+.watchDescription #dressPopup, #fieldPopup, #pilotPopup, #divePopup, #sportPopup, #miscPopup {
+    display: none;
+}
+
+.watchDescription {
+    place-self: center;
+}
+
+.watchDescription p {
+    font-size: 1.7rem;
 }
 
 /* Watch selection */
@@ -240,5 +267,4 @@ footer .footerContent {
     align-content: center;
     text-align: center;
     padding: 1.3rem;
-    margin-top: 2%;
 }

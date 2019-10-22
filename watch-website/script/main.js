@@ -12,6 +12,54 @@ function myFunction(x) {
 
 
 
+// watch selection description hover effect
+
+var dress = document.getElementById('dress');
+var field = document.getElementById('field');
+var pilot = document.getElementById('pilot');
+var dive = document.getElementById('dive');
+var sport = document.getElementById('sport');
+var misc = document.getElementById('misc');
+
+dress.onmouseover = function() {
+    document.getElementById('dressPopup').style.display = 'block';
+}
+dress.onmouseout = function() {
+    document.getElementById('dressPopup').style.display = 'none';
+}
+field.onmouseover = function() {
+    document.getElementById('fieldPopup').style.display = 'block';
+}
+field.onmouseout = function() {
+    document.getElementById('fieldPopup').style.display = 'none';
+}
+pilot.onmouseover = function() {
+    document.getElementById('pilotPopup').style.display = 'block';
+}
+pilot.onmouseout = function() {
+    document.getElementById('pilotPopup').style.display = 'none';
+}
+dive.onmouseover = function() {
+    document.getElementById('divePopup').style.display = 'block';
+}
+dive.onmouseout = function() {
+    document.getElementById('divePopup').style.display = 'none';
+}
+sport.onmouseover = function() {
+    document.getElementById('sportPopup').style.display = 'block';
+}
+sport.onmouseout = function() {
+    document.getElementById('sportPopup').style.display = 'none';
+}
+misc.onmouseover = function() {
+    document.getElementById('miscPopup').style.display = 'block';
+}
+misc.onmouseout = function() {
+    document.getElementById('miscPopup').style.display = 'none';
+}
+
+
+
 // watch api
 
 let apiUrl = "https://cbheslop.github.io/watch-website/data/watchData.json";
