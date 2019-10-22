@@ -1,5 +1,5 @@
 {
-    "watches" : {
+    "watches" : { 
         "dressWatches" : [
             {
                 "id": "0",
@@ -109,6 +109,6 @@
                     "Digital Display"  
                 ]
             }
-        ]   
+        ]  
     }
 }
