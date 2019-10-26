@@ -185,6 +185,12 @@ async function watches(watchNumber) {
     smoothScroll();
 }
 
+function smoothScroll() {
+    document.querySelector('#containerInfo').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
+
 async function eachWatch(id, watchNumber) {
     const response = await fetch(apiUrl);
     const data = await response.json();
