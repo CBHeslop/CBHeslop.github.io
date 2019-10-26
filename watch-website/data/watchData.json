@@ -3,84 +3,82 @@
         "dressWatches" : [
             {
                 "id": "0",
-                "name":"Dress Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
+                "name":"Bulova",
+                "model":"96B104",
                 "img": "../watch-website/images/bulovaSilverDress.jpg",
                 "url": "https://amzn.to/31QkHm3",
-                "size":"46mm",
-                "color":"silver",
+                "size":"37mm",
+                "color":"Silver",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Japanese Quartz",  
+                    "Mineral Crystal"  
                 ]
             },
             {
                 "id": "1",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko",
+                "model":"SNE481",
+                "img": "../watch-website/images/blackSeikoDress.jpg",
+                "url": "https://amzn.to/2Who305",
+                "size":"40mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Japanese Quartz",  
+                    "Hardlex Crystal"  
                 ]
             },
             {
                 "id": "2",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko",
+                "model":"SSA231K1",
+                "img": "../watch-website/images/whiteSeikoAutoDress.jpg",
+                "url": "https://amzn.to/32QC3R4",
+                "size":"41mm",
+                "color":"White",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Automatic",  
+                    "Hardlex Crystal"  
                 ]
             },
             {
                 "id": "3",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Vincero",
+                "model":"4331819061",
+                "img": "../watch-website/images/blueVinceroDress.jpg",
+                "url": "https://amzn.to/2okAw6F",
+                "size":"43mm",
+                "color":"Blue",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Japanese Quartz",  
+                    "Mineral Crystal"  
                 ]
             }
         ],   
         "fieldWatches" : [
             {
                 "id": "0",
-                "name":"Field Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Hamilton Khaki",
+                "model":"H69439931",
+                "img": "../watch-website/images/blackHamiltonField.jpg",
+                "url": "https://amzn.to/2pfSqYN",
+                "size":"38mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Mechanical Hand",  
+                    "Luminous"  
                 ]
             },
             {
                 "id": "1",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko 5",
+                "model":"SNZG151J1",
+                "img": "../watch-website/images/blackSeikoFieldSport.jpg",
+                "url": "https://amzn.to/2MQm4gc",
+                "size":"42mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Swiss Automatic",  
+                    "Hardlex Crystal"  
                 ]
             },
             {
@@ -113,29 +111,28 @@
         "pilotWatches" : [
             {
                 "id": "0",
-                "name":"Pilot Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Jack Mason",
+                "model":"JM-A102-203",
+                "img": "../watch-website/images/masonBlackPilot.jpg",
+                "url": "https://amzn.to/31QzcWV",
+                "size":"42mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Miyota",  
+                    "Mineral Crystal"  
                 ]
             },
             {
                 "id": "1",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Hamilton Khaki",
+                "model":"H64605531",
+                "img": "../watch-website/images/blackHamiltonPilot.jpg",
+                "url": "https://amzn.to/2WgXnMY",
+                "size":"42mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Swiss Automatic",  
+                    "Sapphire Crystal"  
                 ]
             },
             {
@@ -168,16 +165,15 @@
         "diveWatches" : [
             {
                 "id": "0",
-                "name":"Dive Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "url": "https://www.amazon.com/",
+                "name":"Marathon",
+                "model":"WW194018",
+                "img": "../watch-website/images/blackYellowMarathonDive.jpg",
+                "url": "https://amzn.to/2NeNvPV",
                 "size":"46mm",
-                "color":"silver",
+                "color":"Black/Yellow",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Swiss Automatic",  
+                    "Anti Reflective Sapphire"  
                 ]
             },
             {
