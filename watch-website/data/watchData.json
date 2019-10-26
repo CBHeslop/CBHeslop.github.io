@@ -137,15 +137,15 @@
             },
             {
                 "id": "2",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Bulova",
+                "model":"96B251",
+                "img": "../watch-website/images/blackBulovaPilot.jpg",
+                "url": "https://amzn.to/2JoWhtu",
+                "size":"45mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Quartz",  
+                    "Anti Reflective Sapphire"  
                 ]
             },
             {
