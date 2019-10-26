@@ -113,7 +113,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.dressWatches[i].id}, ${watchNumber})"><img src="${data.watches.dressWatches[i].img}"> </a>
                     <h2>${data.watches.dressWatches[i].name}</h2>
-                    <h3>${data.watches.dressWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -125,7 +124,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.fieldWatches[i].id}, ${watchNumber})"><img src="${data.watches.fieldWatches[i].img}"> </a>
                     <h2>${data.watches.fieldWatches[i].name}</h2>
-                    <h3>${data.watches.fieldWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -137,7 +135,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.pilotWatches[i].id}, ${watchNumber})"><img src="${data.watches.pilotWatches[i].img}"> </a>
                     <h2>${data.watches.pilotWatches[i].name}</h2>
-                    <h3>${data.watches.pilotWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -149,7 +146,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.diveWatches[i].id}, ${watchNumber})"><img src="${data.watches.diveWatches[i].img}"> </a>
                     <h2>${data.watches.diveWatches[i].name}</h2>
-                    <h3>${data.watches.diveWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -161,7 +157,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.sportWatches[i].id}, ${watchNumber})"><img src="${data.watches.sportWatches[i].img}"> </a>
                     <h2>${data.watches.sportWatches[i].name}</h2>
-                    <h3>${data.watches.sportWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -173,7 +168,6 @@ async function watches(watchNumber) {
                 <div class="watchElement">
                     <a onclick="eachWatch(${data.watches.miscWatches[i].id}, ${watchNumber})"><img src="${data.watches.miscWatches[i].img}"> </a>
                     <h2>${data.watches.miscWatches[i].name}</h2>
-                    <h3>${data.watches.miscWatches[i].price}</h3>
                 </div>
             </div>
             `;
@@ -208,7 +202,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.dressWatches[id].price}</h3>
                         <h3>Size: ${data.watches.dressWatches[id].size}</h3>
                         <h3>Color: ${data.watches.dressWatches[id].color}</h3>
                         <h3>${data.watches.dressWatches[id].misc}</h3>
@@ -228,7 +221,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.fieldWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.fieldWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.fieldWatches[id].price}</h3>
                         <h3>Size: ${data.watches.fieldWatches[id].size}</h3>
                         <h3>Color: ${data.watches.fieldWatches[id].color}</h3>
                         <h3>${data.watches.fieldWatches[id].misc}</h3>
@@ -247,7 +239,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.dressWatches[id].price}</h3>
                         <h3>Size: ${data.watches.dressWatches[id].size}</h3>
                         <h3>Color: ${data.watches.dressWatches[id].color}</h3>
                         <h3>${data.watches.dressWatches[id].misc}</h3>
@@ -266,7 +257,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.dressWatches[id].price}</h3>
                         <h3>Size: ${data.watches.dressWatches[id].size}</h3>
                         <h3>Color: ${data.watches.dressWatches[id].color}</h3>
                         <h3>${data.watches.dressWatches[id].misc}</h3>
@@ -285,7 +275,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.dressWatches[id].price}</h3>
                         <h3>Size: ${data.watches.dressWatches[id].size}</h3>
                         <h3>Color: ${data.watches.dressWatches[id].color}</h3>
                         <h3>${data.watches.dressWatches[id].misc}</h3>
@@ -304,7 +293,6 @@ async function eachWatch(id, watchNumber) {
                     <div id="watchInformation">
                         <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
                         <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Price: ${data.watches.dressWatches[id].price}</h3>
                         <h3>Size: ${data.watches.dressWatches[id].size}</h3>
                         <h3>Color: ${data.watches.dressWatches[id].color}</h3>
                         <h3>${data.watches.dressWatches[id].misc}</h3>

@@ -44,7 +44,7 @@
                 "id": "3",
                 "name":"Vincero",
                 "model":"4331819061",
-                "img": "../watch-website/images/blueVinceroDress.jpg",
+                "img": "/images/blueVinceroDress.jpg",
                 "url": "https://amzn.to/2okAw6F",
                 "size":"43mm",
                 "color":"Blue",
@@ -59,7 +59,7 @@
                 "id": "0",
                 "name":"Hamilton Khaki",
                 "model":"H69439931",
-                "img": "../watch-website/images/blackHamiltonField.jpg",
+                "img": "/images/blackHamiltonField.jpg",
                 "url": "https://amzn.to/2pfSqYN",
                 "size":"38mm",
                 "color":"Black",
@@ -72,7 +72,7 @@
                 "id": "1",
                 "name":"Seiko 5",
                 "model":"SNZG151J1",
-                "img": "../watch-website/images/blackSeikoFieldSport.jpg",
+                "img": "/images/blackSeikoFieldSport.jpg",
                 "url": "https://amzn.to/2MQm4gc",
                 "size":"42mm",
                 "color":"Black",
@@ -85,7 +85,7 @@
                 "id": "2",
                 "name":"Citizen",
                 "model":"BM8180-03E",
-                "img": "../watch-website/images/blackCitizenField.jpg",
+                "img": "/images/blackCitizenField.jpg",
                 "url": "https://amzn.to/36aAr6M",
                 "size":"37mm",
                 "color":"Black",
@@ -98,7 +98,7 @@
                 "id": "3",
                 "name":"Timex",
                 "model":"T49961",
-                "img": "../watch-website/images/greenTimexField.jpg",
+                "img": "/images/greenTimexField.jpg",
                 "url": "https://amzn.to/2ok9Frl",
                 "size":"40mm",
                 "color":"Black",
@@ -113,7 +113,7 @@
                 "id": "0",
                 "name":"Jack Mason",
                 "model":"JM-A102-203",
-                "img": "../watch-website/images/masonBlackPilot.jpg",
+                "img": "/images/masonBlackPilot.jpg",
                 "url": "https://amzn.to/31QzcWV",
                 "size":"42mm",
                 "color":"Black",
@@ -126,7 +126,7 @@
                 "id": "1",
                 "name":"Hamilton Khaki",
                 "model":"H64605531",
-                "img": "../watch-website/images/blackHamiltonPilot.jpg",
+                "img": "/images/blackHamiltonPilot.jpg",
                 "url": "https://amzn.to/2WgXnMY",
                 "size":"42mm",
                 "color":"Black",
@@ -139,7 +139,7 @@
                 "id": "2",
                 "name":"Bulova",
                 "model":"96B251",
-                "img": "../watch-website/images/blackBulovaPilot.jpg",
+                "img": "/images/blackBulovaPilot.jpg",
                 "url": "https://amzn.to/2JoWhtu",
                 "size":"45mm",
                 "color":"Black",
@@ -151,9 +151,9 @@
             {
                 "id": "3",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -167,7 +167,7 @@
                 "id": "0",
                 "name":"Marathon",
                 "model":"WW194018",
-                "img": "../watch-website/images/blackYellowMarathonDive.jpg",
+                "img": "/images/blackYellowMarathonDive.jpg",
                 "url": "https://amzn.to/2NeNvPV",
                 "size":"46mm",
                 "color":"Black/Yellow",
@@ -179,9 +179,9 @@
             {
                 "id": "1",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -192,9 +192,9 @@
             {
                 "id": "2",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -205,9 +205,9 @@
             {
                 "id": "3",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -220,7 +220,6 @@
             {
                 "id": "0",
                 "name":"Sport Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/amazon-watch.jpg",
                 "url": "https://www.amazon.com/",
@@ -234,9 +233,9 @@
             {
                 "id": "1",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -247,9 +246,9 @@
             {
                 "id": "2",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -260,9 +259,9 @@
             {
                 "id": "3",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -275,7 +274,6 @@
             {
                 "id": "0",
                 "name":"Misc Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/amazon-watch.jpg",
                 "url": "https://www.amazon.com/",
@@ -289,9 +287,9 @@
             {
                 "id": "1",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -302,9 +300,9 @@
             {
                 "id": "2",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
@@ -315,9 +313,9 @@
             {
                 "id": "3",
                 "name":"Samsung",
-                "price":"$209.95",
                 "model":"SM-R800NZSAXAR",
                 "img": "../watch-website/images/orange hands.jpg",
+                "url": "https://www.amazon.com/",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
