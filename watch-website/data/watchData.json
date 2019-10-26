@@ -3,11 +3,11 @@
         "dressWatches" : [
             {
                 "id": "0",
-                "name":"Bulova",
+                "name":"Bulova Mens",
                 "price":"$209.95",
-                "model":"96B104",
-                "img": "https://www.amazon.com/gp/product/B002IDTUHG/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=heartheclick-20&linkId=6f056b1c48fa68d71e536c33ff616f91&language=en_US",
-                "url": "https://amzn.to/2oklZb8",
+                "model":"SM-R800NZSAXAR",
+                "img": "../watch-website/images/amazon-watch.jpg",
+                "url": "https://amzn.to/31QkHm3",
                 "size":"46mm",
                 "color":"silver",
                 "misc":[
