@@ -31,7 +31,7 @@
                 "id": "2",
                 "name":"Orient",
                 "model":"FAC00009N0",
-                "img": "../watch-website/images/creamOrientDress.jpg",
+                "img": "/images/creamOrientDress.jpg",
                 "url": "https://amzn.to/36aA0JG",
                 "size":"40mm",
                 "color":"Cream",
