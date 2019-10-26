@@ -29,15 +29,15 @@
             },
             {
                 "id": "2",
-                "name":"Seiko",
-                "model":"SSA231K1",
-                "img": "../watch-website/images/whiteSeikoAutoDress.jpg",
-                "url": "https://amzn.to/32QC3R4",
-                "size":"41mm",
-                "color":"White",
+                "name":"Orient",
+                "model":"FAC00009N0",
+                "img": "../watch-website/images/creamOrientDress.jpg",
+                "url": "https://amzn.to/36aA0JG",
+                "size":"40mm",
+                "color":"Cream",
                 "misc":[
-                    "Automatic",  
-                    "Hardlex Crystal"  
+                    "Swiss Automatic",  
+                    "Mineral Crystal"  
                 ]
             },
             {
@@ -83,28 +83,28 @@
             },
             {
                 "id": "2",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Citizen",
+                "model":"BM8180-03E",
+                "img": "../watch-website/images/blackCitizenField.jpg",
+                "url": "https://amzn.to/36aAr6M",
+                "size":"37mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Japanese Quartz",  
+                    "Mineral Crystal"  
                 ]
             },
             {
                 "id": "3",
-                "name":"Samsung",
-                "price":"$209.95",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Timex",
+                "model":"T49961",
+                "img": "../watch-website/images/greenTimexField.jpg",
+                "url": "https://amzn.to/2ok9Frl",
+                "size":"40mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Analog Quartz",  
+                    "Mineral Crystal"  
                 ]
             }
         ],
