@@ -39,10 +39,6 @@ header img {
     overflow: hidden;
 }
 
-.containerNav {
-    padding-right: .7rem;
-}
-
 .navbar {
     font-size: 1.3rem;
 }
@@ -50,7 +46,7 @@ header img {
 .navbar > .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    width: 90%;
 }
 
 .container > .logo {
@@ -89,8 +85,15 @@ header img {
     background-color: var(--overlay-color);
 }
 
-main  .mainQuote, .mainMenuWatch {
+main .mainMenuWatch {
     height: 100%;
+}
+
+main .mainQuote {
+    height: 60%;
+}
+
+main  .mainQuote, .mainMenuWatch {
     width: 70%;
     margin-left: 15%;
     color: #fff;
@@ -169,6 +172,10 @@ main .watchCategorie {
     justify-items: center;
     align-content: center;
     text-align: center;
+}
+
+#containerInfo .element {
+    padding-bottom: 2.3rem;
 }
 
 .watchElement img {
@@ -253,6 +260,16 @@ article > p {
     width: 60%;
     margin-top: 2%;
     margin-left: 20%;
+}
+
+/*  About page */
+
+.firstAboutImage {
+    position: relative;
+    background: url('../images/analogue-antique-automatic.jpg') no-repeat center/cover;
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 

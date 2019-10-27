@@ -235,14 +235,14 @@ async function eachWatch(id, watchNumber) {
             <div id="lightBox">
                 <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
                 <div class="watchContainer">
-                    <img src="${data.watches.dressWatches[id].img}">
+                    <img src="${data.watches.pilotWatches[id].img}">
                     <div id="watchInformation">
-                        <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
-                        <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Size: ${data.watches.dressWatches[id].size}</h3>
-                        <h3>Color: ${data.watches.dressWatches[id].color}</h3>
-                        <h3>${data.watches.dressWatches[id].misc}</h3>
-                        <a target="_blank" href="${data.watches.dressWatches[id].url}">Shop Now</a>
+                        <h2><span class="data">${data.watches.pilotWatches[id].name}</span></h2>
+                        <h4><span class="size">${data.watches.pilotWatches[id].model}</span></h4>
+                        <h3>Size: ${data.watches.pilotWatches[id].size}</h3>
+                        <h3>Color: ${data.watches.pilotWatches[id].color}</h3>
+                        <h3>${data.watches.pilotWatches[id].misc}</h3>
+                        <a target="_blank" href="${data.watches.pilotWatches[id].url}">Shop Now</a>
                         
                     </div>
                 </div>
@@ -253,14 +253,14 @@ async function eachWatch(id, watchNumber) {
             <div id="lightBox">
                 <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
                 <div class="watchContainer">
-                    <img src="${data.watches.dressWatches[id].img}">
+                    <img src="${data.watches.diveWatches[id].img}">
                     <div id="watchInformation">
-                        <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
-                        <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Size: ${data.watches.dressWatches[id].size}</h3>
-                        <h3>Color: ${data.watches.dressWatches[id].color}</h3>
-                        <h3>${data.watches.dressWatches[id].misc}</h3>
-                        <a target="_blank" href="${data.watches.dressWatches[id].url}">Shop Now</a>
+                        <h2><span class="data">${data.watches.diveWatches[id].name}</span></h2>
+                        <h4><span class="size">${data.watches.diveWatches[id].model}</span></h4>
+                        <h3>Size: ${data.watches.diveWatches[id].size}</h3>
+                        <h3>Color: ${data.watches.diveWatches[id].color}</h3>
+                        <h3>${data.watches.diveWatches[id].misc}</h3>
+                        <a target="_blank" href="${data.watches.diveWatches[id].url}">Shop Now</a>
                         
                     </div>
                 </div>
@@ -271,14 +271,14 @@ async function eachWatch(id, watchNumber) {
             <div id="lightBox">
                 <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
                 <div class="watchContainer">
-                    <img src="${data.watches.dressWatches[id].img}">
+                    <img src="${data.watches.sportWatches[id].img}">
                     <div id="watchInformation">
-                        <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
-                        <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Size: ${data.watches.dressWatches[id].size}</h3>
-                        <h3>Color: ${data.watches.dressWatches[id].color}</h3>
-                        <h3>${data.watches.dressWatches[id].misc}</h3>
-                        <a target="_blank" href="${data.watches.dressWatches[id].url}">Shop Now</a>
+                        <h2><span class="data">${data.watches.sportWatches[id].name}</span></h2>
+                        <h4><span class="size">${data.watches.sportWatches[id].model}</span></h4>
+                        <h3>Size: ${data.watches.sportWatches[id].size}</h3>
+                        <h3>Color: ${data.watches.sportWatches[id].color}</h3>
+                        <h3>${data.watches.sportWatches[id].misc}</h3>
+                        <a target="_blank" href="${data.watches.sportWatches[id].url}">Shop Now</a>
                         
                     </div>
                 </div>
@@ -289,14 +289,14 @@ async function eachWatch(id, watchNumber) {
             <div id="lightBox">
                 <a onclick="document.getElementById('containerLightBox').style.display='none';document.getElementById('lightBox').style.display='none'">Close</a>
                 <div class="watchContainer">
-                    <img src="${data.watches.dressWatches[id].img}">
+                    <img src="${data.watches.miscWatches[id].img}">
                     <div id="watchInformation">
-                        <h2><span class="data">${data.watches.dressWatches[id].name}</span></h2>
-                        <h4><span class="size">${data.watches.dressWatches[id].model}</span></h4>
-                        <h3>Size: ${data.watches.dressWatches[id].size}</h3>
-                        <h3>Color: ${data.watches.dressWatches[id].color}</h3>
-                        <h3>${data.watches.dressWatches[id].misc}</h3>
-                        <a target="_blank" href="${data.watches.dressWatches[id].url}">Shop Now</a>
+                        <h2><span class="data">${data.watches.miscWatches[id].name}</span></h2>
+                        <h4><span class="size">${data.watches.miscWatches[id].model}</span></h4>
+                        <h3>Size: ${data.watches.miscWatches[id].size}</h3>
+                        <h3>Color: ${data.watches.miscWatches[id].color}</h3>
+                        <h3>${data.watches.miscWatches[id].misc}</h3>
+                        <a target="_blank" href="${data.watches.miscsWatches[id].url}">Shop Now</a>
                         
                     </div>
                 </div>
