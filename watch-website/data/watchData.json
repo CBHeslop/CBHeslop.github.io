@@ -150,15 +150,15 @@
             },
             {
                 "id": "3",
-                "name":"Samsung",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko",
+                "model":"SND255P1",
+                "img": "../watch-website/images/seikoBluePilot.jpg",
+                "url": "https://amzn.to/344wezw",
+                "size":"41mm",
+                "color":"Blue",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Quartz",  
+                    "Hardlex Crystal"  
                 ]
             }
         ],
@@ -178,28 +178,28 @@
             },
             {
                 "id": "1",
-                "name":"Samsung",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko",
+                "model":"SKX007k2",
+                "img": "../watch-website/images/seikoBlackSkxDive.jpg",
+                "url": "https://amzn.to/2q3IAck",
+                "size":"42mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Swiss Automatic",  
+                    "Hardlex Crystal"  
                 ]
             },
             {
                 "id": "2",
-                "name":"Samsung",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/amazon-watch.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Seiko 5 Sports",
+                "model":"SRPD51K2",
+                "img": "../watch-website/images/seikoBlue5SportsDive.jpg",
+                "url": "https://amzn.to/2Py88ci",
+                "size":"42mm",
+                "color":"Blue",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Swiss Automatic",  
+                    "Hardlex Crystal"  
                 ]
             },
             {
