@@ -11,6 +11,36 @@
         gtag('config', 'UA-152522131-1');
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Ads: 706073099 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-706073099"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-706073099');
+    </script>
+
+    <!-- Event snippet for Watch Purchase conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-706073099/K_4yCOi30rQBEIuk19AC',
+              'transaction_id': '',
+              'event_callback': callback
+          });
+          return false;
+        }
+    </script>
+        
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
