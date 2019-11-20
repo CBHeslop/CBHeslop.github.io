@@ -204,15 +204,15 @@
             },
             {
                 "id": "3",
-                "name":"Samsung",
-                "model":"SM-R800NZSAXAR",
-                "img": "../watch-website/images/orange hands.jpg",
-                "url": "https://www.amazon.com/",
-                "size":"46mm",
-                "color":"silver",
+                "name":"Casio",
+                "model":"MDV106-1A",
+                "img": "../watch-website/images/casioDuro.jpg",
+                "url": "https://amzn.to/2O1FMpH",
+                "size":"44mm",
+                "color":"Black",
                 "misc":[
-                    "Bluetooth",  
-                    "Digital Display"  
+                    "Quartz",  
+                    "Mineral Crystal"  
                 ]
             }
         ],

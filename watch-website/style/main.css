@@ -102,6 +102,10 @@ main  .mainQuote, .mainMenuWatch {
     justify-content: center;
 }
 
+.mainQuote h2 {
+    margin-top: 1.3rem;
+}
+
 .mainQuote, .mainMenuWatch > h2, h3 {
     justify-content: flex-end;
     margin: 1.3rem 0 1.3rem 0;
@@ -259,6 +263,7 @@ article > p {
     text-align: center;
     width: 60%;
     margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 20%;
 }
 
