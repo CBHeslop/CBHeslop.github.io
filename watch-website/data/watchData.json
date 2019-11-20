@@ -206,7 +206,7 @@
                 "id": "3",
                 "name":"Casio",
                 "model":"MDV106-1A",
-                "img": "../watch-website/images/casioDuro.jpg",
+                "img": "/images/casioDuro.jpg",
                 "url": "https://amzn.to/2O1FMpH",
                 "size":"44mm",
                 "color":"Black",
