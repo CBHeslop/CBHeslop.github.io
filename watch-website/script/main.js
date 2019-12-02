@@ -296,7 +296,7 @@ async function eachWatch(id, watchNumber) {
                         <h3>Size: ${data.watches.miscWatches[id].size}</h3>
                         <h3>Color: ${data.watches.miscWatches[id].color}</h3>
                         <h3>${data.watches.miscWatches[id].misc}</h3>
-                        <a target="_blank" href="${data.watches.miscsWatches[id].url}">Shop Now</a>
+                        <a target="_blank" href="${data.watches.miscWatches[id].url}">Shop Now</a>
                         
                     </div>
                 </div>
