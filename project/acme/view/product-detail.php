@@ -60,8 +60,6 @@
                 echo $reviewInfoDisplay; } 
             ?>
 
-
-
         </main>
 
         <footer>

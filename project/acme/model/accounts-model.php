@@ -1,4 +1,3 @@
-
 <?php
 
 // Accounts model for site visitors
