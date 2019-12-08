@@ -26,11 +26,7 @@
     // Naviagtion
     $navList = dynaNavigation();
 
-    $screenName = filter_input(INPUT_POST, 'screenName', FILTER_SANITIZE_STRING);
-    $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
-    $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
-    
-
+   
     $action = filter_input(INPUT_POST, 'action');
     if ($action == NULL){
      $action = filter_input(INPUT_GET, 'action');
@@ -41,73 +37,101 @@
         case 'addReview':
             // Filter and store the data
             $invId = filter_input(INPUT_POST, 'invId', FILTER_SANITIZE_NUMBER_INT);
-            $clientId = filter_input(INPUT_POST, 'clientId', FILTER_SANITIZE_NUMBER_INT);
             $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
-            $clientEmail = filter_input(INPUT_POST, 'clientEmail', FILTER_SANITIZE_EMAIL);
             
-            $clientData = getClient($_SESSION['clientData']['clientEmail']);
-            $clientId = $clientData['clientId'];
+
 
              // Check for missing data
              if(empty($reviewText) || (empty($invId))){
-                $message = '<p>Please provide information for all empty form fields.</p>';
+                $messageError = "<p>Please provide information for all empty form fields.</p>";
                 header ("Location: /acme/products/?action=itemInformation&invId=$invId");
                 exit;
             }
 
             // Send the data to the model
-
-            //echo $reviewText;
-            //echo $screenName;
-           
-            $regOutcome = newReview($reviewText, $invId, $clientId);
-            //$reviewInfo = reviewInfo($invId);
+            $regOutcome = newReview($invId, $_SESSION['clientData']['clientId'], $reviewText);
 
             // Check and report the result
             if($regOutcome){
-                $message = "<p class='notice'>New review has been added.</p>";
+                $messageError = "<p class='notice'>New review has been added.</p>";
                 header ("Location: /acme/products/?action=itemInformation&invId=$invId");
+                exit;
+            } 
+             
+            break;
+
+        case 'editReviewView':
+            // Filter and store the data
+            $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+
+            $review = getReview($reviewId);
+
+            if (count($review < 1)) {
+                $messageError = "<p>Sorry, there are no reviews.</p>";
+            }
+
+            include ' ../view/review-edit.php';
+            break;
+
+        case 'reviewUpdate':
+            // Filter and store the data
+            $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+            $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
+
+            if(empty($reviewText)){
+                $messageError = "<p>Please provide information for all empty form fields.</p>";
+                header ("Location: /acme/products/?action=itemInformation&invId=$invId");
+                exit;
+            }
+
+            $reviewUpdate = updateReview($reviewId, $reviewText);
+
+            if($reviewUpdate){
+                $messageError = "<p class='notice'>New updated review has been added.</p>";
+            } else {
+                $messageError = "<p class='notice'>An error was found while updating.</p>";
             } 
 
-        break;
-        case 'editReview':
-            include '../view/add-product.php';
-        break;
-        case 'deleteReview':
-            include '../view/add-product.php';
-        break;
-        case 'reviewUpdate':
-            include '../view/add-product.php';
-        break;
+            include '../view/admin.php';
+            break;
+
+        case 'deleteReviewView':
+            // Filter and store the data
+            $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+
+            $review = getReview($clientId);
+
+            if (count($review < 1)) {
+                $messageError = "<p>Sorry, there are no reviews.</p>";
+            }
+
+            include ' ../view/review-delete.php';
+            
+            break;
+
         case 'reviewDelete':
             // Filter and store data
-            $categoryName = filter_input(INPUT_POST, 'categoryName', FILTER_SANITIZE_STRING);
+            $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+             
+            $review = deleteReview($reviewId);
 
-            // Check for missing data
-            if(empty($categoryName)){
-                $message = '<p>Please provide information for all empty form fields.</p>';
-                include '../view/add-category.php';
-                exit; 
-            }
-
-            // Send the data to the model
-            $regOutcome = newCategory($categoryName);
-
-            // Check and report the result
-            if($regOutcome === 1){
-                include '../view/product-management.php';
-                exit;
+            if ($review) {
+                $messageError = "<p>The review was successfully deleted.</p>";
             } else {
-                $message = "<p>Provide a name for the new category.</p>";
-                include '../view/add-category.php';
-                exit;
+                $messageError = "<p>The review was not successfully deleted.</p>";
             }
-        break;
+
+            include ' ../view/admin.php';
+
+            break;
 
         default:
-            $categoryList = buildCategoryList($categories);
-
-            include '../view/product-management.php';
+            $clientData = getClient($_SESSION['clientData']['clientEmail']);
+                if ($_SESSION['loggedin'] && $clientData['clientLevel'] >= 1) {
+                    header("Location: /acme/view/admin.php");
+                } else {
+                    header("Location: /acme/index.php");
+                }
     }
 
 ?>
