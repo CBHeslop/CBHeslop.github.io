@@ -294,14 +294,14 @@
     }
 
     // Function for displaying the reviews
-    function reviewInfoDisplay($reviewInfo, $regOutcome, $screenName) {
+    function reviewInfoDisplay($regOutcome, $screenName) {
         $reviewDisplay = '<div id="review-display">';
         $reviewDisplay .= "<p>'$screenName'</p>";
-        foreach ($reviewInfo as $reviewDate) {
-            $reviewDisplay .= "<h2>'$reviewDate':</h2>";
+        foreach ($regOutcome as $review) {
+            $reviewDisplay .= "<h2>'$review[reviewDate]':</h2>";
         }
         
-        $reviewDisplay .= "<p>'$regOutcome'</p>";       
+        $reviewDisplay .= "<p>'$review[reviewText]'</p>";       
     
         $reviewDisplay .= '</div>';
         return $reviewDisplay;
