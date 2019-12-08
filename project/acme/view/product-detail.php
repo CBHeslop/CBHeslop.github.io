@@ -53,7 +53,7 @@
                 
                 <input class="submitButton" type="submit" name="submit" id="regbtn" value="Submit Review">
                 <input type="hidden" name="action" value="addReview">
-                <input type="hidden" name="invId" value="invId">
+                <input type="hidden" name="invId" value="<?php echo $invId; ?>">
             </form>
 
             <?php if(isset($reviewInfoDisplay)){ 

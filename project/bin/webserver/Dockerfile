@@ -9,8 +9,19 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y update --fix-missing && \
     apt-get upgrade -y && \
     apt-get --no-install-recommends install -y apt-utils && \
+    apt-get -y --no-install-recommends install locales && \
     rm -rf /var/lib/apt/lists/*
 
+# uncomment chosen locale to enable it's generation
+RUN sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+# generate chosen locale
+RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US
+ENV LC_ALL en_US.UTF-8
+
+# verify modified configuration
+RUN dpkg-reconfigure --frontend noninteractive locales
 
 # Install useful tools and install important libaries
 RUN apt-get -y update && \
@@ -21,9 +32,10 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/* && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+
 # Install xdebug
-RUN pecl install xdebug-2.7.2 && \
-    docker-php-ext-enable xdebug
+#RUN pecl install xdebug-2.7.2 && \
+#    docker-php-ext-enable xdebug
 
 # Install redis
 RUN pecl install redis-4.0.1 && \

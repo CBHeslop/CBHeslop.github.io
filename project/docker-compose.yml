@@ -21,7 +21,7 @@ services:
       MYSQL_SERVER: mysql
       MYSQL_DBNAME: acme
       MYSQL_USER: root
-      MYSQL_PASSWORD: tiger
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
   mysql:
     build:
       context: "./bin/${DATABASE}"
@@ -46,10 +46,10 @@ services:
       PMA_HOST: mysql
       PMA_PORT: 3306
       PMA_USER: root
-      PMA_PASSWORD: tiger
+      PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: root
-      MYSQL_PASSWORD: tiger
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
       - '8080:80'
     volumes: 

@@ -45,14 +45,8 @@
             $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
             $clientEmail = filter_input(INPUT_POST, 'clientEmail', FILTER_SANITIZE_EMAIL);
             
-            $clientData = getClient($clientEmail); 
-
-            $clientId = $_SESSION['clientData']['clientId'];
-                
-           
-            echo $clientId;
-            
-            $invId = 1;
+            $clientData = getClient($_SESSION['clientData']['clientEmail']);
+            $clientId = $clientData['clientId'];
 
              // Check for missing data
              if(empty($reviewText) || (empty($invId))){
@@ -74,9 +68,7 @@
                 $message = "<p class='notice'>New review has been added.</p>";
                 header ("Location: /acme/products/?action=itemInformation&invId=$invId");
             } 
-            
 
-            
         break;
         case 'editReview':
             include '../view/add-product.php';
