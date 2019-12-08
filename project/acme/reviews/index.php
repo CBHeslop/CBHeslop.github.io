@@ -40,7 +40,6 @@
             $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
             
 
-
              // Check for missing data
              if(empty($reviewText) || (empty($invId))){
                 $messageError = "<p>Please provide information for all empty form fields.</p>";
