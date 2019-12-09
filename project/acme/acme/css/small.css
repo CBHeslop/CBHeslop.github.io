@@ -1,0 +1,255 @@
+html{
+    box-sizing: border-box;
+}
+   
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, p, a, span {
+    font-family: 'Mansalva', cursive;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    margin-top: -10px;
+}
+
+.headerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logoDesign img {
+    width: 65%;
+    padding: 10px 0 10px 10px;
+}
+
+.folderAccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.accountLink {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.folderAccount img { 
+    padding-right: 5px;
+    width: 25%;
+    justify-self: end;
+    align-self: center;
+}
+
+.folderAccount a {
+    width: 20%;
+    margin-right: 10%;
+}
+
+.folderAccount p {
+    font-size: 1.3rem;
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    display: grid;
+    background-color: #de2226;
+    height: 50px;
+}
+
+nav li {
+    list-style: none;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+    height: 90%; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 5px 15px 5px;
+    font-size: 1.3rem;
+}
+
+nav li:hover {
+    padding-top: 10px;
+    margin-top: -7px; 
+}
+
+header ul {
+    margin: 5px 0 0 -35px;
+    width: 60%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+a:hover, .active {
+    background-color: #ffffff;
+    color: #de2226;
+}
+
+/* Main */
+main {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+main h1 {
+    margin-left: 10px;
+}
+
+.mainContainer {
+    background-color: #ffffff;
+}
+
+#rocketFeature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#rocketFeature ul {
+    background-color: #ffffff59;
+    padding-left: 3px;
+    margin: 0;
+}
+
+#rocketFeature li {
+    list-style: none;
+    margin-left: 3px;
+}
+
+#rocketFeature li > h2 {
+    margin: 5px 0 5px 3px;
+}
+
+#rocketFeature li img {
+    margin-top: 10px;
+    margin: 10px 6px 45px 3px;
+    width: auto;
+}
+
+.container1 h3 {
+    margin-left: 10px;
+}
+
+.container2 h3 {
+    margin-left: 10px;
+}
+
+.container2 .container2Food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container2Food {
+    margin: -10px 0 10px 0; 
+}
+
+.individualFood {
+    display: grid;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: #808080;
+}
+
+.individualFood > img {
+    justify-self: center;
+}
+
+.individualFood > a {
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #ffffff;
+}
+
+/* Login Account and Registration pages */
+
+form {
+    font-size: 1.3rem;
+    border: 1px solid black;
+    padding: 1.3rem;
+}
+
+.loginAccount {
+    display: grid;
+    padding: 10px 10px;
+    margin: 1.3rem 1.3rem;
+    width: 30%;
+    margin-left: 30%;
+}
+.loginAccount h1 {
+    text-align: center;
+    margin: .7rem 2.3rem 1.0rem 2.3rem;
+}
+
+.loginAccount a {
+    text-decoration: none;
+}
+
+.submitButton, .createAccount {
+    font-family: 'Mansalva', cursive;
+    font-size: 1.7rem;
+    color: #de2226;
+    text-align: center;
+    border: 1px solid #de2226;
+    font-weight: bold;
+    margin: 10px 2% 10px 2%;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* Products Managment */
+
+#prod-display, #product-display{
+    justify-content: center;
+    padding-left: 0px;
+}
+
+#prod-display span{
+    font-size: 1.3rem;
+    color: red;
+}
+
+#prod-display img {
+    margin-left: 10%;
+    width: 80%;
+}
+ 
+#prod-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+    text-align: center;
+}
+                   
+#prod-display li img{
+    width: 60%;
+    padding: 1.3rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid #000000;
+    padding: 10px 0 10px 0;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+}
