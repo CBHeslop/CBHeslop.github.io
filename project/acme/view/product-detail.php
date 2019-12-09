@@ -54,8 +54,6 @@
                 <?php if(isset($message)){
                     echo $message; } 
                 ?>
-                Screen Name: <br>
-                <input name="screenName" id="screenName" type="text" <?php if(isset($screenName)){echo "value='$screenName'";}  ?> ><br>
                 Review: <br>
                 <input name="reviewText" id="reviewText" type="text" <?php if(isset($reviewText)){echo "value='$reviewText'";}  ?> ><br>
                 

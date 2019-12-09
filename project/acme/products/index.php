@@ -1,4 +1,3 @@
-
 <?php
 // Products Controller
 

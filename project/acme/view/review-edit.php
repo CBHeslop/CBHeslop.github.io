@@ -36,8 +36,7 @@
 
                 <input class="submitButton" type="submit" name="submit" value="Update Review"><br>
                 <input type="hidden" name="action" value="reviewUpdate">
-                <input type="hidden" name="reviewId" value="<?php  echo $review['reviewId']; ?>">
-                <?php echo $review['reviewId']; ?>
+                <input type="hidden" name="reviewId" value="<?php echo $reviewId; ?>">
             </form>
 
         
