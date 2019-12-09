@@ -1,4 +1,15 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 08, 2019 at 01:55 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -12,21 +23,119 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `categoryId` int(10) UNSIGNED NOT NULL,
+  `categoryName` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Category classifications of inventory items';
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`categoryId`, `categoryName`) VALUES
+(1, 'Cannon'),
+(2, 'Explosive'),
+(3, 'Misc'),
+(4, 'Rocket'),
+(5, 'Trap');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `clients`
+--
+
+CREATE TABLE `clients` (
+  `clientId` int(10) UNSIGNED NOT NULL,
+  `clientFirstname` varchar(15) NOT NULL,
+  `clientLastname` varchar(25) NOT NULL,
+  `clientEmail` varchar(40) NOT NULL,
+  `clientPassword` varchar(255) NOT NULL,
+  `clientLevel` enum('1','2','3') NOT NULL DEFAULT '1',
+  `comments` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `clients`
+--
+
+INSERT INTO `clients` (`clientId`, `clientFirstname`, `clientLastname`, `clientEmail`, `clientPassword`, `clientLevel`, `comments`) VALUES
+(1, 'Admin', 'User', 'admin@cit336.net', '$2y$10$Pt5UUkJOpipk5jv68.jJqukRZCc797w3UKBym7Z.wV4X99VfobCOi', '3', ''),
+(2, 'Curtis', 'Heslop', 'test@hotmail.com', '$2y$10$2nTUmFY7L2Umuu967SXbQu3c1KyUBPCFfxx2t2mxrnPJSxtTlRJ16', '1', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `imgId` int(10) UNSIGNED NOT NULL,
+  `invId` int(10) UNSIGNED NOT NULL,
+  `imgName` varchar(100) NOT NULL,
+  `imgPath` varchar(150) NOT NULL,
+  `imgDate` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `images`
+--
+
+INSERT INTO `images` (`imgId`, `invId`, `imgName`, `imgPath`, `imgDate`) VALUES
+(1, 1, 'rocket.png', '/acme/images/products/rocket.png', '2019-12-06 23:09:19'),
+(2, 1, 'rocket-tn.png', '/acme/images/products/rocket-tn.png', '2019-12-06 23:09:19'),
+(3, 2, 'mortar.jpg', '/acme/images/products/mortar.jpg', '2019-12-06 23:09:38'),
+(4, 2, 'mortar-tn.jpg', '/acme/images/products/mortar-tn.jpg', '2019-12-06 23:09:38'),
+(5, 3, 'catapult.png', '/acme/images/products/catapult.png', '2019-12-06 23:09:52'),
+(6, 3, 'catapult-tn.png', '/acme/images/products/catapult-tn.png', '2019-12-06 23:09:52'),
+(7, 4, 'roadrunner.jpg', '/acme/images/products/roadrunner.jpg', '2019-12-06 23:10:02'),
+(8, 4, 'roadrunner-tn.jpg', '/acme/images/products/roadrunner-tn.jpg', '2019-12-06 23:10:02'),
+(9, 5, 'trap.jpg', '/acme/images/products/trap.jpg', '2019-12-06 23:10:25'),
+(10, 5, 'trap-tn.jpg', '/acme/images/products/trap-tn.jpg', '2019-12-06 23:10:25'),
+(11, 6, 'hole.png', '/acme/images/products/hole.png', '2019-12-06 23:10:38'),
+(12, 6, 'hole-tn.png', '/acme/images/products/hole-tn.png', '2019-12-06 23:10:38'),
+(13, 7, 'no-image.png', '/acme/images/products/no-image.png', '2019-12-06 23:10:47'),
+(14, 7, 'no-image-tn.png', '/acme/images/products/no-image-tn.png', '2019-12-06 23:10:47'),
+(15, 8, 'anvil.png', '/acme/images/products/anvil.png', '2019-12-06 23:10:56'),
+(16, 8, 'anvil-tn.png', '/acme/images/products/anvil-tn.png', '2019-12-06 23:10:56'),
+(17, 9, 'rubberband.jpg', '/acme/images/products/rubberband.jpg', '2019-12-06 23:11:07'),
+(18, 9, 'rubberband-tn.jpg', '/acme/images/products/rubberband-tn.jpg', '2019-12-06 23:11:07'),
+(19, 10, 'mallet.png', '/acme/images/products/mallet.png', '2019-12-06 23:11:16'),
+(20, 10, 'mallet-tn.png', '/acme/images/products/mallet-tn.png', '2019-12-06 23:11:16'),
+(21, 11, 'tnt.png', '/acme/images/products/tnt.png', '2019-12-06 23:11:28'),
+(22, 11, 'tnt-tn.png', '/acme/images/products/tnt-tn.png', '2019-12-06 23:11:29'),
+(23, 12, 'seed.jpg', '/acme/images/products/seed.jpg', '2019-12-06 23:11:38'),
+(24, 12, 'seed-tn.jpg', '/acme/images/products/seed-tn.jpg', '2019-12-06 23:11:38'),
+(25, 13, 'piano.jpg', '/acme/images/products/piano.jpg', '2019-12-06 23:11:48'),
+(26, 13, 'piano-tn.jpg', '/acme/images/products/piano-tn.jpg', '2019-12-06 23:11:48'),
+(27, 14, 'helmet.png', '/acme/images/products/helmet.png', '2019-12-06 23:11:58'),
+(28, 14, 'helmet-tn.png', '/acme/images/products/helmet-tn.png', '2019-12-06 23:11:58'),
+(29, 15, 'rope.jpg', '/acme/images/products/rope.jpg', '2019-12-06 23:12:07'),
+(30, 15, 'rope-tn.jpg', '/acme/images/products/rope-tn.jpg', '2019-12-06 23:12:07'),
+(31, 16, 'bomb.png', '/acme/images/products/bomb.png', '2019-12-06 23:12:19'),
+(32, 16, 'bomb-tn.png', '/acme/images/products/bomb-tn.png', '2019-12-06 23:12:19');
+
+-- --------------------------------------------------------
+
 --
 -- Table structure for table `inventory`
 --
 
-DROP TABLE IF EXISTS `inventory`;
 CREATE TABLE `inventory` (
   `invId` int(10) UNSIGNED NOT NULL,
   `invName` varchar(50) NOT NULL DEFAULT '',
   `invDescription` text NOT NULL,
   `invImage` varchar(50) NOT NULL DEFAULT '',
   `invThumbnail` varchar(50) NOT NULL DEFAULT '',
-  `invPrice` decimal(10,2) NOT NULL DEFAULT '0.00',
-  `invStock` smallint(6) NOT NULL DEFAULT '0',
-  `invSize` smallint(6) NOT NULL DEFAULT '0',
-  `invWeight` smallint(6) NOT NULL DEFAULT '0',
+  `invPrice` decimal(10,2) NOT NULL DEFAULT 0.00,
+  `invStock` smallint(6) NOT NULL DEFAULT 0,
+  `invSize` smallint(6) NOT NULL DEFAULT 0,
+  `invWeight` smallint(6) NOT NULL DEFAULT 0,
   `invLocation` varchar(35) NOT NULL DEFAULT '',
   `categoryId` int(10) UNSIGNED NOT NULL,
   `invVendor` varchar(20) NOT NULL DEFAULT '',
@@ -34,7 +143,7 @@ CREATE TABLE `inventory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Acme Inc. Inventory Table';
 
 --
--- Data for table `inventory`
+-- Dumping data for table `inventory`
 --
 
 INSERT INTO `inventory` (`invId`, `invName`, `invDescription`, `invImage`, `invThumbnail`, `invPrice`, `invStock`, `invSize`, `invWeight`, `invLocation`, `categoryId`, `invVendor`, `invStyle`) VALUES
@@ -54,42 +163,35 @@ INSERT INTO `inventory` (`invId`, `invName`, `invDescription`, `invImage`, `invT
 (14, 'Crash Helmet', 'This carbon fiber and plastic helmet is the ultimate in protection for your head. comes in assorted colors.', '/acme/images/products/helmet.png', '/acme/images/products/helmet-tn.png', '100.00', 25, 48, 9, 'San Jose', 3, 'Suzuki', 'Carbon Fiber'),
 (15, 'Nylon Rope', 'This nylon rope is ideal for all uses. Each rope is the highest quality nylon and comes in 100 foot lengths.', '/acme/images/products/rope.jpg', '/acme/images/products/rope-tn.jpg', '15.00', 200, 200, 6, 'San Jose', 3, 'Marina Sales', 'Nylon'),
 (16, 'Small Bomb', 'Bomb with a fuse - A little old fashioned, but highly effective. This bomb has the ability to devistate anything within 30 feet.', '/acme/images/products/bomb.png', '/acme/images/products/bomb-tn.png', '275.00', 58, 30, 12, 'San Jose', 2, 'Nobel Enterprises', 'Metal');
+
 -- --------------------------------------------------------
 
 --
--- Indexes for table `inventory`
---
-ALTER TABLE `inventory`
-  ADD PRIMARY KEY (`invId`),
-  ADD KEY `categoryId` (`categoryId`);
-
-
---
--- AUTO_INCREMENT for table `inventory`
---
-ALTER TABLE `inventory` 
-MODIFY `invId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
--- -------------------------------------------------------
---
--- Table structure for table `categories`
---
-DROP TABLE IF EXISTS `categories`;
-CREATE TABLE `categories` (
-  `categoryId` int(10) UNSIGNED NOT NULL,
-  `categoryName` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Category classifications of inventory items';
-
---
--- Data for table `categories`
+-- Table structure for table `reviews`
 --
 
-INSERT INTO `categories` (`categoryId`, `categoryName`) VALUES
-(1, 'Cannon'),
-(2, 'Explosive'),
-(3, 'Misc'),
-(4, 'Rocket'),
-(5, 'Trap');
+CREATE TABLE `reviews` (
+  `reviewId` int(10) UNSIGNED NOT NULL,
+  `reviewText` text NOT NULL,
+  `reviewDate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `invId` int(10) UNSIGNED NOT NULL,
+  `clientId` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `reviews`
+--
+
+INSERT INTO `reviews` (`reviewId`, `reviewText`, `reviewDate`, `invId`, `clientId`) VALUES
+(43, 'This is a test', '2019-12-07 04:03:42', 1, 2),
+(44, 'This is a test number 2', '2019-12-07 04:05:26', 1, 2),
+(45, 'This is a test number 3', '2019-12-07 04:42:06', 1, 1),
+(54, 'This is a test number 4', '2019-12-07 20:35:03', 1, 2),
+(55, 'This is a test number 5', '2019-12-07 23:08:56', 1, 1);
+
+--
+-- Indexes for dumped tables
+--
 
 --
 -- Indexes for table `categories`
@@ -98,59 +200,90 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`categoryId`);
 
 --
+-- Indexes for table `clients`
+--
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`clientId`);
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`imgId`),
+  ADD KEY `invId` (`invId`);
+
+--
+-- Indexes for table `inventory`
+--
+ALTER TABLE `inventory`
+  ADD PRIMARY KEY (`invId`),
+  ADD KEY `categoryId` (`categoryId`);
+
+--
+-- Indexes for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`reviewId`),
+  ADD KEY `invId` (`invId`),
+  ADD KEY `clientId` (`clientId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-MODIFY `categoryId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `categoryId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `clients`
+--
+ALTER TABLE `clients`
+  MODIFY `clientId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `imgId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `inventory`
+--
+ALTER TABLE `inventory`
+  MODIFY `invId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `reviewId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `images`
+--
+ALTER TABLE `images`
+  ADD CONSTRAINT `FK_inv_image` FOREIGN KEY (`invId`) REFERENCES `inventory` (`invId`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `inventory`
 --
-ALTER TABLE `inventory` 
-ADD CONSTRAINT `FK_inv_categories` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE;
-
-
-
-
-
-
-
-
--- --------------------------------------------------------
+ALTER TABLE `inventory`
+  ADD CONSTRAINT `FK_inv_categories` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Table structure for table `clients`
+-- Constraints for table `reviews`
 --
-
-  DROP TABLE IF EXISTS `clients`;
-  CREATE TABLE `clients` (
-    `clientId` int(10) UNSIGNED NOT NULL,
-    `clientFirstname` varchar(15) NOT NULL,
-    `clientLastname` varchar(25) NOT NULL,
-    `clientEmail` varchar(40) NOT NULL,
-    `clientPassword` varchar(255) NOT NULL,
-    `clientLevel` enum('1','2','3') NOT NULL DEFAULT '1',
-    `comments` text NOT NULL
-  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Indexes for table `clients`
---
-  ALTER TABLE `clients`
-    ADD PRIMARY KEY (`clientId`);
-
-
--- AUTO_INCREMENT for table `clients`
---
-  ALTER TABLE `clients`
-    MODIFY `clientId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
-
-
-
-
+ALTER TABLE `reviews`
+  ADD CONSTRAINT `FK_reviews_clients` FOREIGN KEY (`clientId`) REFERENCES `clients` (`clientId`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `FK_reviews_inventory` FOREIGN KEY (`invId`) REFERENCES `inventory` (`invId`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
