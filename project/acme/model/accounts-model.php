@@ -1,3 +1,4 @@
+
 <?php
 
 // Accounts model for site visitors
@@ -8,8 +9,8 @@
         // Create a connection object using the acme connection function
         $db = acmeConnect();
         // The SQL statement
-        $sql = 'INSERT INTO clients (clientFirstname, clientLastname,clientEmail, clientPassword, comments)
-            VALUES (:clientFirstname, :clientLastname, :clientEmail, :clientPassword, :comments)';
+        $sql = 'INSERT INTO clients (clientFirstname, clientLastname,clientEmail, clientPassword)
+            VALUES (:clientFirstname, :clientLastname, :clientEmail, :clientPassword)';
         // Create the prepared statement using the acme connection
         $stmt = $db->prepare($sql);
         // The next four lines replace the placeholders in the SQL
@@ -19,7 +20,6 @@
         $stmt->bindValue(':clientLastname', $clientLastname, PDO::PARAM_STR);
         $stmt->bindValue(':clientEmail', $clientEmail, PDO::PARAM_STR);
         $stmt->bindValue(':clientPassword', $clientPassword, PDO::PARAM_STR);
-        $stmt->bindValue(':comments', '', PDO::PARAM_STR);
         // Insert the data
         $stmt->execute();
         // Ask how many rows changed as a result of our insert
