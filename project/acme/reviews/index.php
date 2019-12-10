@@ -108,24 +108,8 @@
         case 'deleteReviewView':
             // Filter and store the data
             $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
-
-            //if (count($review < 1)) {
-            //    $messageError = "<p>Sorry, there are no reviews.</p>";
-            //}
-
-            $getClientReview = getReviewClient($_SESSION['clientData']['clientId']);
-            if ($reviewId == $_SESSION['clientData']['clientId']) {
-                foreach ($getClientReview as $review) {
-                    $reviewId = $review['reviewId'];
-                }
-            }
             
             $review = getReview($reviewId);
-            
-
-            echo ($reviewId);
-
-            //print_r($getClientReview);
 
             include '../view/review-delete.php';
             
@@ -135,16 +119,6 @@
             // Filter and store data
             $reviewId = filter_input(INPUT_POST, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
              
-
-            $getClientReview = getReviewClient($_SESSION['clientData']['clientId']);
-            if ($reviewId == $_SESSION['clientData']['clientId']) {
-                foreach ($getClientReview as $review) {
-                    $reviewId = $review['reviewId'];
-                }
-            }
-
-            echo ($reviewId);
-
             $review = deleteReview($reviewId);
 
             if ($review) {
@@ -153,8 +127,7 @@
                 $message = "<p>The review was not successfully deleted.</p>";
             }
 
-            //header ("Location: /acme/accounts/index.php");
-            include ' ../view/admin.php';
+            include '../view/admin.php';
 
             break;
 
