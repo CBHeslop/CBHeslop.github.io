@@ -38,7 +38,6 @@
                 <input type="hidden" name="action" value="reviewDelete">
 
                 <input type="hidden" name="reviewId" value="<?php echo $reviewId ?>">
-                <?php echo $review['reviewId']; ?>
             </form>
 
         
