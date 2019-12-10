@@ -294,9 +294,9 @@
     function getReviewInformation($getReview) {
         if (count($getReview) > 0 ) {
         $reviewDisplay = '<div id="review-display">';
-        //$reviewDisplay .= "<p>'$screenName'</p>";
         foreach ($getReview as $review) {
-            $reviewDisplay .= "<h2>$review[clientFirstname] $review[reviewDate]</h2>";
+            $screenName = substr($review['clientFirstname'], 0, 1) . $review['clientLastname'];
+            $reviewDisplay .= "<h2>$screenName $review[reviewDate]</h2>";
             $reviewDisplay .= "<h2>$review[reviewText]</h2>"; 
         }      
             $reviewDisplay .= '</div>';
@@ -311,11 +311,8 @@
     function getReviewForClient($getClientReview) {
         if (count($getClientReview) > 0 ) {
         $reviewDisplay = '<div id="review-display">';
-        //$reviewDisplay .= "<p>'$screenName'</p>";
-        foreach ($getClientReview as $review) {
-            //$reviewDisplay .= "<h2>$review[invName]</h2>";
-            //$reviewDisplay .= "<h2>$review[reviewDate]</h2>";
-            $reviewDisplay .= "<h2>$review[invName] ($review[reviewDate]) <a href='/acme/reviews/?action=editReviewView&reviewId=" . $review['reviewId'] . "'>Modify</a> | <a href='/acme/reviews/?action=deleteReviewView&reviewId=" . $review['reviewId'] . "'>Delete</a></h2>"; 
+        foreach ($getClientReview as $review) { 
+            $reviewDisplay .= "<h2>$review[invName] ($review[reviewDate]) <p>$review[reviewText]</p> <a href='/acme/reviews/?action=editReviewView&reviewId=" . $review['reviewId'] . "'>Modify</a> | <a href='/acme/reviews/?action=deleteReviewView&reviewId=" . $review['reviewId'] . "'>Delete</a></h2>";  
         }      
             $reviewDisplay .= '</div>';
         } else {

@@ -62,8 +62,8 @@
             // Send the data to the model
             $regOutcome = newReview($invId, $_SESSION['clientData']['clientId'], $reviewText);
             $getReview = getReviewInfo($invId);
+
             // Check and report the result
-            print_r($getReview);
             if(count($getReview) > 0 ){   
                 $reviewInfoDisplay = getReviewInformation($getReview); 
             } else {
@@ -88,7 +88,7 @@
 
         case 'reviewUpdate':
             // Filter and store the data
-            $reviewId = filter_input(INPUT_GET, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
+            $reviewId = filter_input(INPUT_POST, 'reviewId', FILTER_SANITIZE_NUMBER_INT);
             $reviewText = filter_input(INPUT_POST, 'reviewText', FILTER_SANITIZE_STRING);
 
             if(empty($reviewText)){
@@ -96,12 +96,7 @@
                 exit;
             }
 
-            echo $reviewId;
-            echo $reviewText;
-
             $reviewUpdate = updateReview($reviewId, $reviewText);
-
-            print_r($reviewUpdate);
 
             if($reviewUpdate){
                 $message = "<p class='notice'>New updated review has been added.</p>";
