@@ -176,11 +176,11 @@ async function watches(watchNumber) {
 
     document.getElementById('containerInfo').innerHTML = outputDiv;
 
-    smoothScroll();
+    //smoothScroll();
 }
 
 function smoothScroll() {
-    document.querySelector('#containerInfo').scrollIntoView({ 
+    document.querySelector('#watchPageTitle').scrollIntoView({ 
         behavior: 'smooth' 
       });
 }

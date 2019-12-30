@@ -46,7 +46,7 @@ header img {
 .navbar > .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    width: 80%;
 }
 
 .container > .logo {
@@ -70,10 +70,14 @@ header img {
 
 /* Main Body */
 
+.onclickButton {
+    color: black;
+}
+
 .containerOne {
     position: relative;
     background: url('../images/analog-watch-blur-classic-.jpg') no-repeat center/cover;
-    height: 1080px;
+    height: 900px;
 }
 
 .overlay {
@@ -94,8 +98,8 @@ main .mainQuote {
 }
 
 main  .mainQuote, .mainMenuWatch {
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -272,6 +276,16 @@ article > p {
 .firstAboutImage {
     position: relative;
     background: url('../images/analogue-antique-automatic.jpg') no-repeat center/cover;
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* Contact Page */
+
+.firstContactImage {
+    position: relative;
+    background: url('../images/accuracy-analogue-antique-watch.jpg') no-repeat center/cover;
     height: 400px;
     width: 80%;
     margin-left: 10%;
