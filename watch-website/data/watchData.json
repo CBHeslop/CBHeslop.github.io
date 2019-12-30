@@ -5,7 +5,7 @@
                 "id": "0",
                 "name":"Bulova",
                 "model":"96B104",
-                "img": "/images/bulovaSilverDress.jpg",
+                "img": "../images/bulovaSilverDress.jpg",
                 "url": "https://amzn.to/31QkHm3",
                 "size":"37mm",
                 "color":"Silver",
