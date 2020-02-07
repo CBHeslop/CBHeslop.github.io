@@ -10,7 +10,7 @@
   #myTopnav > .buttons {
     display: flex;
     flex-direction: column;
-    margin-left: 70%;
+    margin-left: 80%;
   }
 
   .navbar > .container {
@@ -112,6 +112,10 @@
     font-size:  35px;
     text-align: center;
   }
+
+  .logoProjectSeperate figure {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 500px) { 
@@ -127,5 +131,9 @@
   .sub-container1-1 h3 {
     font-size:  30px;
     text-align: center;
+  }
+
+  .logoProjectSeperate figure {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
