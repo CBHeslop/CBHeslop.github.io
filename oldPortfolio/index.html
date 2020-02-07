@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Curtis Heslop Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style/medScreen.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style/smallScreen.css" />
+        <script src="script/main.js"></script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+            <img class="main-image" src="images/pexels-photo-194356.jpeg" alt="computer">
+            <img class="main-image" src="images/pexels-photo-93405.jpeg" alt="computer">
+            <img class="main-image" src="images/pexels-photo-192324.jpeg" alt="computer">
+        <header>
+            <nav>
+                <button class="rotatebtn normal" id="transform" onclick="myFunction()">
+                    <div class="lines"></div> 
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </button>
+                <ul class="menu hide" id="hamburger">
+                    <li><a href="#home" onclick="">Home</a></li>
+                    <li><a href="#container1">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container">
+
+            <main id="home">
+                <h1 class="lg-heading">Curtis <span class="secondary-color">Heslop</span></h1>
+
+                <h2 class="sm-heading">Web Developer and Designer</h2>
+
+                <div class="icons">
+                    <a target="_blank" href="https://github.com/CBHeslop">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/curtis-heslop-04000813/">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </main>
+
+            <hr id="lineBreak">
+
+            <div id="container1">
+                <h2>About Me</h2>
+
+                <p class="intro">Hi I'm Curtis, I am a Web Developer and Designer. I started self-taught and now I'm 
+                currently majoring in Web Design and Development focusing on design at BYU-Idaho. I enjoy taking any idea and 
+                turning it into a reality. I love seeing the process from start to finish and witnessing 
+                the transformation that takes place, whether it be a program or a piece of art.<br>
+                <br>
+                The computer languages I have become familiar with are....
+                </p>
+
+                <div class="languages">
+                    <ul class="secondary-color">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                
+                <button id="resume" type="button" name="resume">
+                    <h3>Resume</h3>
+                    <a target="_blank" href="resume/Curtis Heslop Resume.htm">View</a>
+                    <a href="resume/Curtis Heslop Resume.docx">Download</a>
+                </button>
+
+            </div>
+
+            <hr id="lineBreak">
+
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <figure>
+                        <a target="_blank" href="watch-website/index.html"><img src="images/watchesLarge.jpg" alt="Watch Retail Website"></a>
+                        <figcaption>JSON Data, Responsive/Mobile Friendly. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/watch-website">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="movieReel/index.html"><img src="images/movieReelLarge.jpg" alt="Movie search Website"></a>
+                        <figcaption>JSON Data, Movie API and Responsive/Mobile Friendly. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/movieReel">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="offThePath/index.html"><img src="images/offThePathLarge.jpg" alt="Moutain Biking Website"></a>
+                        <figcaption>JSON Data, Google Map and Responsive/Mobile Friendly. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/offThePath">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="hearTheClick/index.html"><img src="images/hearTheClickLarge.jpg" alt="Photography Website"></a>
+                        <figcaption>Style Guide, Google Map and Responsive. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/hearTheClick">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="temple-inn-and-suites/index.html"><img src="images/templeWebsiteLarge.jpg" alt="Temple Website"></a>
+                        <figcaption>JSON Data, Live Weather API, Google Map and Responsive. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/temple-inn-and-suites">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="weathersite/index.html"><img src="images/weatherWebsiteLarge.jpg" alt="Weather Website"></a>
+                        <figcaption>JSON Data, Live Weather API, Google Map and Responsive. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/weathersite">Source Code</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a target="_blank" href="calculatorProject/index.html"><img src="images/calculatorLarge.jpg" alt="Calculator Website"></a>
+                        <figcaption>JavaScript and Responsive. <a target="_blank" href="https://github.com/CBHeslop/CBHeslop.github.io/tree/master/calculatorProject">Source Code</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <hr id="lineBreak">
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <form id="contact" method="POST" action="email.php">
+                    <input name="name" type="text" placeholder="Your Name*" required>
+                    <br><hr>
+                    <input name="email" type="email" placeholder="Your Email*" required>
+                    <br><hr>
+                    <textarea name="message" type="text" placeholder="Your Message" rows="4" cols="45"></textarea>
+                    <br><hr>
+                    <!--<input class="submitresponse" type="submit" value="Submit">-->
+                </form>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>Curtis Heslop | Portfolio | Copyright &copy; 2019</p>
+        </footer>
+        <script src="script/main.js"></script>
+    </body>
+</html>
