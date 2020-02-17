@@ -28,6 +28,7 @@
 
   .responsive {
     height: 15rem;
+    width: 90%;
   }
 
   .topnav a:not(:first-child) {display: none;}
@@ -55,7 +56,7 @@
       cursor: pointer;
       float: left;
       margin-top: 1.2rem;
-      margin-left: 1.1rem;
+      argin-left: 1.1rem;
   }
 
   .change {
@@ -92,8 +93,15 @@
     grid-template-columns: repeat(1, 1fr);
     background-color: #F8E9D4;
     text-align: center;
-}
+  }
 
+  main .icons {
+    position: absolute;
+    left: 5%;
+    top: 85%;
+    text-align: center;
+    argin-right: 300rem;
+  }
 }
 
 /* Title page on small screen */
