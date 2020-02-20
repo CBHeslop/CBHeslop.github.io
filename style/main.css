@@ -122,11 +122,9 @@ main  .sub-container1-1 {
 
 @media only screen and (min-width: 800px) {
     main .icons {
-        position: absolute;
-        left: 85%;
-        top: 85%;
         text-align: right;
-        margin-right: 300rem;
+        background-color: #BCE2F7;
+        padding-right: 2.5%;
     }
 }
 
@@ -178,7 +176,6 @@ main .designCategorie {
 #projects > h2 {
     text-align: center;
     font-size: 3rem;
-    margin-top: 4.0rem;
 }
 
 #projects > ul {

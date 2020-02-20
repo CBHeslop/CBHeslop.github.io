@@ -96,11 +96,10 @@
   }
 
   main .icons {
-    position: absolute;
     left: 5%;
     top: 85%;
     text-align: center;
-    argin-right: 300rem;
+    background-color: #BCE2F7;
   }
 }
 
