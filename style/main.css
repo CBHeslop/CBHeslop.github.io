@@ -96,7 +96,8 @@ body {
 
 main > .container1 {
     position: relative;
-    background: url('../images/background.svg') no-repeat center/cover;
+    ackground: url('../images/background.svg') no-repeat center/cover;
+    background: url('../images/Building.jpg') no-repeat center/cover;
     height: 800px;
 }
 

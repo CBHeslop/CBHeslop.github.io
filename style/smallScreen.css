@@ -91,7 +91,8 @@
   main .mainMenuDesign {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #F8E9D4;
+    ackground-color: #F8E9D4;
+    background-color: #fff;
     text-align: center;
   }
 
@@ -99,7 +100,8 @@
     left: 5%;
     top: 85%;
     text-align: center;
-    background-color: #BCE2F7;
+    ackground-color: #BCE2F7;
+    background-color: #fff;
   }
 }
 
