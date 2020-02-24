@@ -36,7 +36,8 @@ body {
 /* Nav Bar */
 
 #home {
-    background-color: #BCE2F7;
+    ackground-color: #BCE2F7;
+    background-color: #fff;
 }
 
 #myTopnav .buttons > a{
@@ -123,7 +124,8 @@ main  .sub-container1-1 {
 @media only screen and (min-width: 800px) {
     main .icons {
         text-align: right;
-        background-color: #BCE2F7;
+        ackground-color: #BCE2F7;
+        background-color: #fff;
         padding-right: 2.5%;
     }
 }
@@ -139,13 +141,15 @@ main a {
 /* Work container */
 
 main > .container2 {
-    background-color: #F8E9D4;
+    ackground-color: #F8E9D4;
+    background-color: #fff;
 }
 
 main .mainMenuDesign {
     display: grid;
     rid-template-columns: repeat(2, 1fr);
-    background-color: #F8E9D4;
+    ackground-color: #F8E9D4;
+    background-color: #fff;
     text-align: center;
 }
 
