@@ -98,7 +98,8 @@ main > .container1 {
     position: relative;
     ackground: url('../images/background.svg') no-repeat center/cover;
     background: url('../images/Building.jpg') no-repeat center/cover;
-    height: 800px;
+    background-attachment: fixed;
+    height: 600px;
 }
 
 main  .sub-container1-1 {
@@ -115,6 +116,7 @@ main  .sub-container1-1 {
 .sub-container1-1 h1 {
     font-size:  90px;
     font-family: 'Michroma', sans-serif;
+    color: #1c51ff;
 }
 
 .sub-container1-1 h3 {
@@ -127,7 +129,8 @@ main  .sub-container1-1 {
         text-align: right;
         ackground-color: #BCE2F7;
         background-color: #fff;
-        padding-right: 2.5%;
+        padding-right: 3%;
+        padding-bottom: 2%;
     }
 }
 
@@ -246,8 +249,8 @@ main .designCategorie {
 
 #home > h3 {
     text-align: center;
-    width: 40%;
-    margin-left: 30%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 #home .letterProject > img {
