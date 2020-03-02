@@ -206,7 +206,6 @@ main .designCategorie {
 
 .projects > figure > a > img {
     margin-top: 10%;
-    border: 2px solid #fff;
     box-shadow: 5px 10px 10px rgb(68, 68, 68);
     width: 600px;
 }
