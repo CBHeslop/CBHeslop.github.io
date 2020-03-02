@@ -45,7 +45,7 @@
   }
 
   .topnav.responsive a {
-    float: none;
+    float: right;
     display: block;
     text-align: right;
     width: 3.3rem;
@@ -99,11 +99,12 @@
     top: 85%;
     text-align: center;
     background-color: #fff;
-    padding-bottom: 4%;
+    padding-bottom: 12%;
   }
 
   main > .container1 {
     background: url('../images/Building.jpg') no-repeat center/cover;
+    height: 600px;
   }
 }
 
