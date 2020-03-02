@@ -56,7 +56,6 @@
       cursor: pointer;
       float: left;
       margin-top: 1.2rem;
-      argin-left: 1.1rem;
   }
 
   .change {
@@ -91,7 +90,6 @@
   main .mainMenuDesign {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    ackground-color: #F8E9D4;
     background-color: #fff;
     text-align: center;
   }
@@ -100,9 +98,12 @@
     left: 5%;
     top: 85%;
     text-align: center;
-    ackground-color: #BCE2F7;
     background-color: #fff;
     padding-bottom: 4%;
+  }
+
+  main > .container1 {
+    background: url('../images/Building.jpg') no-repeat center/cover;
   }
 }
 

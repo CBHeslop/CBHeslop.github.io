@@ -36,16 +36,12 @@ body {
 /* Nav Bar */
 
 #home {
-    ackground-color: #BCE2F7;
     background-color: #fff;
 }
 
 #myTopnav .buttons > a{
     order: 2px solid #fff;
-    ox-shadow: 5px 10px 10px rgb(255, 255, 255);
-
     background-color: rgba(255, 255, 255, 0.600);
-    ox-shadow: 7px 7px 7px #888888;
     border-radius: 5px;
     margin-right: 1.5rem;
     margin-top: 1.2rem;
@@ -94,13 +90,7 @@ body {
 
 /* Container title page */
 
-main > .container1 {
-    position: relative;
-    ackground: url('../images/background.svg') no-repeat center/cover;
-    background: url('../images/Building.jpg') no-repeat center/cover;
-    background-attachment: fixed;
-    height: 600px;
-}
+
 
 main  .sub-container1-1 {
     height: 100%;
@@ -125,9 +115,16 @@ main  .sub-container1-1 {
 }
 
 @media only screen and (min-width: 800px) {
+
+    main > .container1 {
+        position: relative;
+        background: url('../images/Building.jpg') no-repeat center/cover;
+        background-attachment: fixed;
+        height: 600px;
+    }
+
     main .icons {
         text-align: right;
-        ackground-color: #BCE2F7;
         background-color: #fff;
         padding-right: 3%;
         padding-bottom: 2%;
@@ -145,14 +142,11 @@ main a {
 /* Work container */
 
 main > .container2 {
-    ackground-color: #F8E9D4;
     background-color: #fff;
 }
 
 main .mainMenuDesign {
     display: grid;
-    rid-template-columns: repeat(2, 1fr);
-    ackground-color: #F8E9D4;
     background-color: #fff;
     text-align: center;
 }
