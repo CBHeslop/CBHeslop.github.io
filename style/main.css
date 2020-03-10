@@ -260,4 +260,8 @@ main .designCategorie {
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* Svg logo images size*/
+.letterProjectSeperate > .svgImages img {
+    width: 300px;
+}
 
