@@ -24,6 +24,7 @@ body {
     height: 100%;
     margin: 0;
     line-height: 1.5;
+    font-family: 'Michroma', sans-serif;
 }
 
 #lineBreak {
@@ -106,7 +107,7 @@ main  .sub-container1-1 {
 .sub-container1-1 h1 {
     font-size:  90px;
     font-family: 'Michroma', sans-serif;
-    color: #1c51ff;
+    color: #7694f7;
 }
 
 .sub-container1-1 h3 {
@@ -206,9 +207,10 @@ main .designCategorie {
 }
 
 .projects > figure > a > img {
-    margin-top: 10%;
-    box-shadow: 5px 10px 10px rgb(180, 180, 180);
+    argin-top: 10%;
+    box-shadow: 5px 10px 10px rgb(231, 231, 231);
     width: 600px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -225,11 +227,15 @@ main .designCategorie {
 
 .projects > figure > figcaption {
     text-align: center;
-    margin-top: 1.3rem;
+    margin-top: 0.5rem;
 }
 
 .projects > figure > figcaption > a {
     color: #00fafa;
+}
+
+#businessCard {
+    margin-top: 8%;
 }
 
 /* Letters project */
